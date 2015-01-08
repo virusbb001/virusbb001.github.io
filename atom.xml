@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[My Octopress Blog]]></title>
+  <link href="http://virusbb001.github.io/atom.xml" rel="self"/>
+  <link href="http://virusbb001.github.io/"/>
+  <updated>2015-01-08T23:02:26+09:00</updated>
+  <id>http://virusbb001.github.io/</id>
+  <author>
+    <name><![CDATA[virusVer001]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[ブログ始めました]]></title>
+    <link href="http://virusbb001.github.io/blog/2015/01/08/i-will-try-blog/"/>
+    <updated>2015-01-08T18:36:09+09:00</updated>
+    <id>http://virusbb001.github.io/blog/2015/01/08/i-will-try-blog</id>
+    <content type="html"><![CDATA[<p>Octopressなるものを入れてブログを作れるらしいです<br/>
+最近は便利ですね</p>
+]]></content>
+  </entry>
+  
+</feed>
