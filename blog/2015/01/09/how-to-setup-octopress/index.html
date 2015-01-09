@@ -5,13 +5,12 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>ブログ始めました - My Octopress Blog</title>
+  <title>Octopressのセットアップのメモ - My Octopress Blog</title>
   <meta name="author" content="virusVer001">
 
   
-  <meta name="description" content="Octopressなるものを入れてブログを作れるらしいです
-最近は便利ですね
-">
+  <meta name="description" content="セットアップにはOctopressでGitHub無料ブログ構築。sourceをBitbucket管理。簡単ガイド！ - 酒と泪とRubyとRailsととOctopress公式のドキュメントを参考にしました．
+正直にいってここさえ見てしまえばだいたいなんとかなります． &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -20,7 +19,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://virusbb001.github.io/blog/2015/01/08/i-will-try-blog">
+  <link rel="canonical" href="http://virusbb001.github.io/blog/2015/01/09/how-to-setup-octopress">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/atom.xml" rel="alternate" title="My Octopress Blog" type="application/atom+xml">
@@ -70,7 +69,7 @@
   
   <header>
     
-      <h1 class="entry-title">ブログ始めました</h1>
+      <h1 class="entry-title">Octopressのセットアップのメモ</h1>
     
     
       <p class="meta">
@@ -79,15 +78,38 @@
 
 
 
-<time class='entry-date' datetime='2015-01-08T18:36:09+09:00'><span class='date'><span class='date-month'>Jan</span> <span class='date-day'>8</span><span class='date-suffix'>th</span>, <span class='date-year'>2015</span></span> <span class='time'>6:36 pm</span></time>
+<time class='entry-date' datetime='2015-01-09T17:53:51+09:00'><span class='date'><span class='date-month'>Jan</span> <span class='date-day'>9</span><span class='date-suffix'>th</span>, <span class='date-year'>2015</span></span> <span class='time'>5:53 pm</span></time>
         
       </p>
     
   </header>
 
 
-<div class="entry-content"><p>Octopressなるものを入れてブログを作れるらしいです<br/>
-最近は便利ですね</p>
+<div class="entry-content"><p>セットアップには<a href="http://morizyun.github.io/blog/octopress-gitpage-minimum-install-guide/">OctopressでGitHub無料ブログ構築。sourceをBitbucket管理。簡単ガイド！ - 酒と泪とRubyとRailsと</a>と<a href="http://octopress.org/docs/setup/">Octopress公式のドキュメント</a>を参考にしました．<br/>
+正直にいってここさえ見てしまえばだいたいなんとかなります．</p>
+
+<p>ただこの通りにやっても404になったりとかがあったのでその時のメモを下に書いておきます．<br/>
+まず，リポジトリ名があっているかの確認です．</p>
+
+<ol>
+<li><a href="https://github.com">GitHub</a>からリポジトリ<code>username.github.io</code>にいきます</li>
+<li>そこのSettingsをクリックします</li>
+<li>GitHub Pagesあたりまでスクロールします</li>
+<li>Your site is published at なんちゃらって出てきたら多分大丈夫です</li>
+</ol>
+
+
+<p>この時masterにファイルが有ることを確認します．他のブランチだと表示されません．<br/>
+すぐに<code>http://username.github.io/</code>にアクセスしても404になっている時があります．<br/>
+ここで先ほどのリポジトリの設定のGitHub Pagesあたりをもう一度見てみましょう．</p>
+
+<blockquote><p>Changes may take up to 30 minutes to be visible.</p></blockquote>
+
+<p>らしいので30分ぐらいゲームでもして待っていましょう．そうすると反映されているはずです．</p>
+
+<p>自分が直面した問題はこのくらいです．</p>
+
+<p>追記: TOEIC IPの試験が明日ありますが全く勉強していません．実際ヤバイです．</p>
 </div>
 
 
@@ -103,7 +125,7 @@
 
 
 
-<time class='entry-date' datetime='2015-01-08T18:36:09+09:00'><span class='date'><span class='date-month'>Jan</span> <span class='date-day'>8</span><span class='date-suffix'>th</span>, <span class='date-year'>2015</span></span> <span class='time'>6:36 pm</span></time>
+<time class='entry-date' datetime='2015-01-09T17:53:51+09:00'><span class='date'><span class='date-month'>Jan</span> <span class='date-day'>9</span><span class='date-suffix'>th</span>, <span class='date-year'>2015</span></span> <span class='time'>5:53 pm</span></time>
       
 
 
@@ -111,7 +133,7 @@
     
       <div class="sharing">
   
-  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://virusbb001.github.io/blog/2015/01/08/i-will-try-blog/" data-via="" data-counturl="http://virusbb001.github.io/blog/2015/01/08/i-will-try-blog/" >Tweet</a>
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://virusbb001.github.io/blog/2015/01/09/how-to-setup-octopress/" data-via="" data-counturl="http://virusbb001.github.io/blog/2015/01/09/how-to-setup-octopress/" >Tweet</a>
   
   
   
@@ -120,8 +142,8 @@
     
     <p class="meta">
       
+        <a class="basic-alignment left" href="/blog/2015/01/08/i-will-try-blog/" title="Previous Post: ブログ始めました">&laquo; ブログ始めました</a>
       
-        <a class="basic-alignment right" href="/blog/2015/01/09/how-to-setup-octopress/" title="Next Post: Octopressのセットアップのメモ">Octopressのセットアップのメモ &raquo;</a>
       
     </p>
   </footer>
@@ -175,8 +197,8 @@
       
         
         // var disqus_developer = 1;
-        var disqus_identifier = 'http://virusbb001.github.io/blog/2015/01/08/i-will-try-blog/';
-        var disqus_url = 'http://virusbb001.github.io/blog/2015/01/08/i-will-try-blog/';
+        var disqus_identifier = 'http://virusbb001.github.io/blog/2015/01/09/how-to-setup-octopress/';
+        var disqus_url = 'http://virusbb001.github.io/blog/2015/01/09/how-to-setup-octopress/';
         var disqus_script = 'embed.js';
       
     (function () {

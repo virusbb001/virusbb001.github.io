@@ -4,7 +4,7 @@
   <title><![CDATA[My Octopress Blog]]></title>
   <link href="http://virusbb001.github.io/atom.xml" rel="self"/>
   <link href="http://virusbb001.github.io/"/>
-  <updated>2015-01-08T23:05:34+09:00</updated>
+  <updated>2015-01-09T23:14:25+09:00</updated>
   <id>http://virusbb001.github.io/</id>
   <author>
     <name><![CDATA[virusVer001]]></name>
@@ -12,6 +12,39 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Octopressのセットアップのメモ]]></title>
+    <link href="http://virusbb001.github.io/blog/2015/01/09/how-to-setup-octopress/"/>
+    <updated>2015-01-09T17:53:51+09:00</updated>
+    <id>http://virusbb001.github.io/blog/2015/01/09/how-to-setup-octopress</id>
+    <content type="html"><![CDATA[<p>セットアップには<a href="http://morizyun.github.io/blog/octopress-gitpage-minimum-install-guide/">OctopressでGitHub無料ブログ構築。sourceをBitbucket管理。簡単ガイド！ - 酒と泪とRubyとRailsと</a>と<a href="http://octopress.org/docs/setup/">Octopress公式のドキュメント</a>を参考にしました．<br/>
+正直にいってここさえ見てしまえばだいたいなんとかなります．</p>
+
+<p>ただこの通りにやっても404になったりとかがあったのでその時のメモを下に書いておきます．<br/>
+まず，リポジトリ名があっているかの確認です．</p>
+
+<ol>
+<li><a href="https://github.com">GitHub</a>からリポジトリ<code>username.github.io</code>にいきます</li>
+<li>そこのSettingsをクリックします</li>
+<li>GitHub Pagesあたりまでスクロールします</li>
+<li>Your site is published at なんちゃらって出てきたら多分大丈夫です</li>
+</ol>
+
+
+<p>この時masterにファイルが有ることを確認します．他のブランチだと表示されません．<br/>
+すぐに<code>http://username.github.io/</code>にアクセスしても404になっている時があります．<br/>
+ここで先ほどのリポジトリの設定のGitHub Pagesあたりをもう一度見てみましょう．</p>
+
+<blockquote><p>Changes may take up to 30 minutes to be visible.</p></blockquote>
+
+<p>らしいので30分ぐらいゲームでもして待っていましょう．そうすると反映されているはずです．</p>
+
+<p>自分が直面した問題はこのくらいです．</p>
+
+<p>追記: TOEIC IPの試験が明日ありますが全く勉強していません．実際ヤバイです．</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[ブログ始めました]]></title>
