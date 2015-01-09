@@ -4,7 +4,7 @@
   <title><![CDATA[My Octopress Blog]]></title>
   <link href="http://virusbb001.github.io/atom.xml" rel="self"/>
   <link href="http://virusbb001.github.io/"/>
-  <updated>2015-01-09T23:14:25+09:00</updated>
+  <updated>2015-01-09T23:17:01+09:00</updated>
   <id>http://virusbb001.github.io/</id>
   <author>
     <name><![CDATA[virusVer001]]></name>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Octopressのセットアップのメモ]]></title>
-    <link href="http://virusbb001.github.io/blog/2015/01/09/how-to-setup-octopress/"/>
+    <link href="http://virusbb001.github.io/blog/2015/01/09/my-probrem-of-setting-up-octopress/"/>
     <updated>2015-01-09T17:53:51+09:00</updated>
-    <id>http://virusbb001.github.io/blog/2015/01/09/how-to-setup-octopress</id>
+    <id>http://virusbb001.github.io/blog/2015/01/09/my-probrem-of-setting-up-octopress</id>
     <content type="html"><![CDATA[<p>セットアップには<a href="http://morizyun.github.io/blog/octopress-gitpage-minimum-install-guide/">OctopressでGitHub無料ブログ構築。sourceをBitbucket管理。簡単ガイド！ - 酒と泪とRubyとRailsと</a>と<a href="http://octopress.org/docs/setup/">Octopress公式のドキュメント</a>を参考にしました．<br/>
 正直にいってここさえ見てしまえばだいたいなんとかなります．</p>
 
