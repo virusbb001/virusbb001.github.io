@@ -1,0 +1,27 @@
+---
+layout: post
+title: "2015年にやりたいこと"
+date: 2015-01-15 10:38:53 +0900
+comments: true
+categories: 
+---
+以下2015年にやりたいことのリスト
+
+1. Railsについてもうちょっと勉強する
+2. Guardを使う
+	1. Livereloadを使う
+3. virusbb001/WordMemorizationの機能拡張
+	1. TOEIC当たりの対策ができるまでには
+4. Minecraft
+5. MinecraftのModding
+6. Vimの設定ファイルの整理
+7. Downloadsディレクトリの整理
+8. その他ファイル/ディレクトリの整理
+9. 就職か進学かどちらかを決める
+10. Google analyticsを使ってみる
+11. Jenkinsとか使ってみる
+12. 英語の勉強
+	1. ThaumCraftのソーモノミコンがそれなりに読めるくらい
+	2. 資格とかは考慮しない
+
+このページは随時追記・変更される
