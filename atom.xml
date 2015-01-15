@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[My Octopress Blog]]></title>
+  <title><![CDATA[virusbb001's blog]]></title>
   <link href="http://virusbb001.github.io/atom.xml" rel="self"/>
   <link href="http://virusbb001.github.io/"/>
-  <updated>2015-01-10T22:55:29+09:00</updated>
+  <updated>2015-01-15T16:35:13+09:00</updated>
   <id>http://virusbb001.github.io/</id>
   <author>
     <name><![CDATA[virusVer001]]></name>
@@ -12,6 +12,42 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[2015年にやりたいこと]]></title>
+    <link href="http://virusbb001.github.io/blog/2015/01/15/todo-2015/"/>
+    <updated>2015-01-15T10:38:53+09:00</updated>
+    <id>http://virusbb001.github.io/blog/2015/01/15/todo-2015</id>
+    <content type="html"><![CDATA[<p>以下2015年にやりたいことのリスト</p>
+
+<ol>
+<li>Railsについてもうちょっと勉強する</li>
+<li>Guardを使う
+
+<ol>
+<li>Livereloadを使う</li>
+</ol>
+</li>
+<li>virusbb001/WordMemorizationの機能拡張
+
+<ol>
+<li>TOEIC当たりの対策ができるまでには</li>
+</ol>
+</li>
+<li>Minecraft</li>
+<li>MinecraftのModding</li>
+<li>Vimの設定ファイルの整理</li>
+<li>Downloadsディレクトリの整理</li>
+<li>その他ファイル/ディレクトリの整理</li>
+<li>就職か進学かどちらかを決める</li>
+<li>Google analyticsを使ってみる</li>
+<li>Jenkinsとか使ってみる</li>
+</ol>
+
+
+<p>このページは随時追記・変更される</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[TOEIC]]></title>
