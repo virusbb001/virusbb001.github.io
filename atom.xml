@@ -4,7 +4,7 @@
   <title><![CDATA[virusbb001's blog]]></title>
   <link href="http://virusbb001.github.io/atom.xml" rel="self"/>
   <link href="http://virusbb001.github.io/"/>
-  <updated>2015-01-15T22:13:53+09:00</updated>
+  <updated>2015-01-17T22:58:03+09:00</updated>
   <id>http://virusbb001.github.io/</id>
   <author>
     <name><![CDATA[virusVer001]]></name>
@@ -19,6 +19,9 @@
     <updated>2015-01-15T10:38:53+09:00</updated>
     <id>http://virusbb001.github.io/blog/2015/01/15/todo-2015</id>
     <content type="html"><![CDATA[<p>以下2015年にやりたいことのリスト</p>
+
+<!-- more -->
+
 
 <ol>
 <li>Railsについてもうちょっと勉強する</li>
@@ -49,6 +52,15 @@
 <li>資格とかは考慮しない</li>
 </ol>
 </li>
+<li>9に伴い何かしら夢を決める
+
+<ol>
+<li>このことにより9を達成しやすくなる</li>
+</ol>
+</li>
+<li>プロ研用のウェブサイトを作る</li>
+<li>SQLiteを使って収支管理ツールを1から作る</li>
+<li>マウスを使えるようにする</li>
 </ol>
 
 
