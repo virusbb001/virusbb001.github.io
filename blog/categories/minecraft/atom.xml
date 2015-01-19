@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Minecraft | virusbb001's blog]]></title>
+  <link href="http://virusbb001.github.io/blog/categories/minecraft/atom.xml" rel="self"/>
+  <link href="http://virusbb001.github.io/"/>
+  <updated>2015-01-19T21:14:43+09:00</updated>
+  <id>http://virusbb001.github.io/</id>
+  <author>
+    <name><![CDATA[virusVer001]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[MinecraftのJarに直接ぶち込む形式のModの導入方法]]></title>
+    <link href="http://virusbb001.github.io/blog/2015/01/19/install-forge-before-1-dot-5-2/"/>
+    <updated>2015-01-19T07:28:39+09:00</updated>
+    <id>http://virusbb001.github.io/blog/2015/01/19/install-forge-before-1-dot-5-2</id>
+    <content type="html"><![CDATA[<p>備忘録<br/>
+だいたいは<a href="http://ghasts.blog.fc2.com/blog-entry-571.html">まいんくらふとにっき</a>を参考に<br/>
+jarファイルでないと実行してくれない模様</p>
+
+<!-- more -->
+
+
+<ol>
+<li>入れたいバージョンのMinecraft本体をダウンロード</li>
+<li>入れたいバージョンのMinecraftをコピー</li>
+<li>欲しいバージョンのForgeをダウンロード</li>
+<li>Forgeの展開
+
+<ul>
+<li>展開する前にディレクトリを作成してその中で行う</li>
+<li>展開のコマンド: <code>unzip filename</code></li>
+</ul>
+</li>
+<li>Minecraft本体の展開
+
+<ul>
+<li>新しくディレクトリを作る</li>
+<li><code>jar xf 本体.jar</code></li>
+</ul>
+</li>
+<li>Minecraft本体のMETA-INF削除
+
+<ul>
+<li><code>rm -rf META-INF</code></li>
+</ul>
+</li>
+<li>Forgeをインストール
+
+<ul>
+<li><code>cp -R forge展開先/* minecraft展開先</code></li>
+</ul>
+</li>
+<li>圧縮
+
+<ul>
+<li><code>jar cf 本体.jar -C 展開先/ .</code></li>
+<li>圧縮しないとダウンロードしに行こうとする</li>
+</ul>
+</li>
+<li>確認
+
+<ul>
+<li>ランチャーを起動してプロファイルの設定をする</li>
+<li>設定したらMinecraftを起動</li>
+<li>右下にForgeとか出てきたら成功です</li>
+</ul>
+</li>
+</ol>
+
+]]></content>
+  </entry>
+  
+</feed>
