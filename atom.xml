@@ -4,7 +4,7 @@
   <title><![CDATA[virusbb001's blog]]></title>
   <link href="http://virusbb001.github.io/atom.xml" rel="self"/>
   <link href="http://virusbb001.github.io/"/>
-  <updated>2015-01-19T21:14:43+09:00</updated>
+  <updated>2015-01-25T00:34:34+09:00</updated>
   <id>http://virusbb001.github.io/</id>
   <author>
     <name><![CDATA[virusVer001]]></name>
@@ -123,6 +123,8 @@ jarファイルでないと実行してくれない模様</p>
 <li>プロ研用のウェブサイトを作る</li>
 <li>SQLiteを使って収支管理ツールを1から作る</li>
 <li>マウスを使えるようにする</li>
+<li>VagrantとかDockerとかに手を出してみる(2015-01-25追記)</li>
+<li>Javascriptのテストを書いてみる(2015-01-25追記)</li>
 </ol>
 
 
