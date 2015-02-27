@@ -4,7 +4,7 @@
   <title><![CDATA[virusbb001's blog]]></title>
   <link href="http://virusbb001.github.io/atom.xml" rel="self"/>
   <link href="http://virusbb001.github.io/"/>
-  <updated>2015-01-25T00:34:34+09:00</updated>
+  <updated>2015-02-27T11:17:56+09:00</updated>
   <id>http://virusbb001.github.io/</id>
   <author>
     <name><![CDATA[virusVer001]]></name>
@@ -12,6 +12,63 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[ゲームしながらプログラミングできそうなの]]></title>
+    <link href="http://virusbb001.github.io/blog/2015/02/10/programming-and-game/"/>
+    <updated>2015-02-10T17:46:25+09:00</updated>
+    <id>http://virusbb001.github.io/blog/2015/02/10/programming-and-game</id>
+    <content type="html"><![CDATA[<p>ゲームしながらプログラミング出来そうなもの個人的なまとめ<br/>
+他に面白そうなのあったら教えて</p>
+
+<!-- more -->
+
+
+<ul>
+<li><a href="https://minecraft.net/">Minecraft</a>
+
+<ul>
+<li><a href="http://www.computercraft.info/">ComputerCraft</a>
+
+<ul>
+<li>使用言語: Lua</li>
+<li>マイクラにコンピュータを追加してプログラムを書いて自動化したりする感じ</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="http://hackforplay.xyz/">HackforPlay</a>
+
+<ul>
+<li>使用言語: Javascript</li>
+<li>Enchant.jsを使ってコードを改造する感じ</li>
+</ul>
+</li>
+<li><a href="http://www.codingame.com/">CodinGame</a>
+
+<ul>
+<li>使用言語: たくさん</li>
+<li>ゲームがたくさん</li>
+</ul>
+</li>
+<li><a href="http://robocode.sourceforge.net/">RoboCode</a>
+
+<ul>
+<li>使用言語: Java もしくは .NET</li>
+<li>ロボットを作って戦わせる</li>
+</ul>
+</li>
+<li><a href="http://www.checkio.org/">CheckiO</a>
+
+<ul>
+<li>使用言語: Python</li>
+<li>ID登録の時点でプログラムを書かなければならない</li>
+</ul>
+</li>
+</ul>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[MinecraftのJarに直接ぶち込む形式のModの導入方法]]></title>
@@ -76,11 +133,11 @@ jarファイルでないと実行してくれない模様</p>
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[2015年にやりたいこと]]></title>
+    <title type="html"><![CDATA[<del>2015年</del> 死ぬまでにやりたいこと]]></title>
     <link href="http://virusbb001.github.io/blog/2015/01/15/todo-2015/"/>
     <updated>2015-01-15T10:38:53+09:00</updated>
     <id>http://virusbb001.github.io/blog/2015/01/15/todo-2015</id>
-    <content type="html"><![CDATA[<p>以下2015年にやりたいことのリスト</p>
+    <content type="html"><![CDATA[<p>以下 <del>2015年</del> 死ぬまでにやりたいことのリスト</p>
 
 <!-- more -->
 
@@ -125,6 +182,12 @@ jarファイルでないと実行してくれない模様</p>
 <li>マウスを使えるようにする</li>
 <li>VagrantとかDockerとかに手を出してみる(2015-01-25追記)</li>
 <li>Javascriptのテストを書いてみる(2015-01-25追記)</li>
+<li>MinecraftのmodであるComputerCraftを使ってみる
+
+<ol>
+<li>何かプログラムを書く</li>
+</ol>
+</li>
 </ol>
 
 
