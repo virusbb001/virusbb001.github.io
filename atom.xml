@@ -4,7 +4,7 @@
   <title><![CDATA[virusbb001's blog]]></title>
   <link href="http://virusbb001.github.io/atom.xml" rel="self"/>
   <link href="http://virusbb001.github.io/"/>
-  <updated>2015-02-27T11:17:56+09:00</updated>
+  <updated>2015-03-01T00:04:45+09:00</updated>
   <id>http://virusbb001.github.io/</id>
   <author>
     <name><![CDATA[virusVer001]]></name>
@@ -161,7 +161,12 @@ jarファイルでないと実行してくれない模様</p>
 <li>Vimの設定ファイルの整理</li>
 <li>Downloadsディレクトリの整理</li>
 <li>その他ファイル/ディレクトリの整理</li>
-<li>就職か進学かどちらかを決める</li>
+<li><del>就職か進学かどちらかを決める</del>
+
+<ul>
+<li>就職にします</li>
+</ul>
+</li>
 <li>Google analyticsを使ってみる</li>
 <li>Jenkinsとか使ってみる</li>
 <li>英語の勉強
