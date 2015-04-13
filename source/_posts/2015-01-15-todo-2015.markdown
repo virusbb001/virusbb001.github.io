@@ -35,6 +35,7 @@ categories:
 18. Javascriptのテストを書いてみる(2015-01-25追記)
 19. MinecraftのmodであるComputerCraftを使ってみる
 	1. 何かプログラムを書く
+20. 同級生/後輩用のGitの説明資料作る
 
 このページは随時追記・変更される
 
