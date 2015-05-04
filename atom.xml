@@ -4,7 +4,7 @@
   <title><![CDATA[virusbb001's blog]]></title>
   <link href="http://virusbb001.github.io/atom.xml" rel="self"/>
   <link href="http://virusbb001.github.io/"/>
-  <updated>2015-05-03T23:06:14+09:00</updated>
+  <updated>2015-05-04T12:51:53+09:00</updated>
   <id>http://virusbb001.github.io/</id>
   <author>
     <name><![CDATA[virusVer001]]></name>
@@ -14,14 +14,14 @@
 
   
   <entry>
-    <title type="html"><![CDATA[内定をとってしまった話]]></title>
+    <title type="html"><![CDATA[意識が低い人間がどうやって内定を取ったか]]></title>
     <link href="http://virusbb001.github.io/blog/2015/04/30/seriously-will-you-really-employ-me/"/>
     <updated>2015-04-30T07:49:13+09:00</updated>
     <id>http://virusbb001.github.io/blog/2015/04/30/seriously-will-you-really-employ-me</id>
     <content type="html"><![CDATA[<h2>内定を得ました</h2>
 
 <p><a href="http://virusbb001.github.io/blog/2015/03/30/student-hunting-report/">逆求人フェスティバル</a>で面談した会社から内定を頂きました。<br/>
-私からは以上です。</p>
+<del>私からは以上です。</del> <a href="https://twitter.com/virusVer001/status/573792496666304512">Twitter</a>でタイトルまで指定してﾂｲｯﾄしてしまったのでまじめに書きます。</p>
 ]]></content>
   </entry>
   
@@ -462,7 +462,12 @@ jarファイルでないと実行してくれない模様</p>
 <li>プロ研用のウェブサイトを作る</li>
 <li>SQLiteを使って収支管理ツールを1から作る</li>
 <li>マウスを使えるようにする</li>
-<li>VagrantとかDockerとかに手を出してみる(2015-01-25追記)</li>
+<li><del>VagrantとかDockerとかに手を出してみる(2015-01-25追記)</del>
+
+<ul>
+<li>ちょっとだけ勉強した</li>
+</ul>
+</li>
 <li>Javascriptのテストを書いてみる(2015-01-25追記)</li>
 <li>MinecraftのmodであるComputerCraftを使ってみる
 
@@ -471,6 +476,7 @@ jarファイルでないと実行してくれない模様</p>
 </ol>
 </li>
 <li>同級生/後輩用のGitの説明資料作る</li>
+<li>ダウンロードしてやっていないゲームをクリアする</li>
 </ol>
 
 
