@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Minecraft on My New Hugo Site</title>
+    <link>http://replace-this-with-your-hugo-site.com/categories/minecraft/</link>
+    <description>Recent content in Minecraft on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Sun, 05 Jul 2015 15:57:11 +0000</lastBuildDate>
+    <atom:link href="http://replace-this-with-your-hugo-site.com/categories/minecraft/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Minecraft1.7.10mod構成</title>
+      <link>http://replace-this-with-your-hugo-site.com/2015/07/05/minecraft-1-dot-7-10-mods/</link>
+      <pubDate>Sun, 05 Jul 2015 15:57:11 +0000</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/2015/07/05/minecraft-1-dot-7-10-mods/</guid>
+      <description>
+
+&lt;p&gt;入れてるmodリスト&lt;/p&gt;
+
+&lt;h2 id=&#34;入れてるmod-ファイル名:c399eb0263aa855dc65e968c3c2a5062&#34;&gt;入れてるmod(ファイル名)&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://forum.minecraftuser.jp/viewtopic.php?t=6874&#34;&gt;1.7.10_forge1291_mod_CutAllSMP_v2.5.0.zip&lt;/a&gt;
+
+&lt;ul&gt;
+&lt;li&gt;木を一括で伐採する奴&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://ae2.ae-mod.info&#34;&gt;appliedenergistics2-rv2-stable-9.jar&lt;/a&gt;
+
+&lt;ul&gt;
+&lt;li&gt;アイテムをデジタル化&lt;/li&gt;
+&lt;li&gt;アイテム輸送&lt;/li&gt;
+&lt;li&gt;大容量貯蔵&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.mod-buildcraft.com/&#34;&gt;buildcraft-7.0.13.jar&lt;/a&gt;
+
+&lt;ul&gt;
+&lt;li&gt;アイテム輸送&lt;/li&gt;
+&lt;li&gt;建築物コピー&lt;/li&gt;
+&lt;li&gt;露天掘り&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.mod-buildcraft.com/&#34;&gt;buildcraft-compat-7.0.8.jar&lt;/a&gt;
+
+&lt;ul&gt;
+&lt;li&gt;mod連携
+
+&lt;ul&gt;
+&lt;li&gt;BCとその他&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.minecraftforum.net/forums/mapping-and-modding/minecraft-mods/1279956-chickenbones-mods&#34;&gt;CodeChickenCore-1.7.10-1.0.7.46-universal.jar&lt;/a&gt;
+
+&lt;ul&gt;
+&lt;li&gt;前提mod&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.minecraftforum.net/forums/mapping-and-modding/minecraft-mods/1279956-chickenbones-mods&#34;&gt;CodeChickenLib-1.7.10-1.1.3.138-universal.jar&lt;/a&gt;
+
+&lt;ul&gt;
+&lt;li&gt;前提mod&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.teamcofh.com&#34;&gt;CoFHCore-[1.7.10]3.0.3B1-291.jar&lt;/a&gt;
+
+&lt;ul&gt;
+&lt;li&gt;TemaCoFH製modの前提mod&lt;/li&gt;
+&lt;li&gt;これだけでも色々機能がある&lt;/li&gt;
+&lt;li&gt;岩盤を平坦に&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.computercraft.info&#34;&gt;ComputerCraft1.73.jar&lt;/a&gt;
+
+&lt;ul&gt;
+&lt;li&gt;コンピューターとロボットを追加するmod&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://forestry.sengir.net/&#34;&gt;forestry_1.7.10-3.6.2.19.jar&lt;/a&gt;
+
+&lt;ul&gt;
+&lt;li&gt;自動収納/補給バックパック&lt;/li&gt;
+&lt;li&gt;農業系マシン(マルチファーム)&lt;/li&gt;
+&lt;li&gt;養蜂&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/Chicken-Bones/ForgeMultipart&#34;&gt;ForgeMultipart-1.7.10-1.2.0.344-universal.jar&lt;/a&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Project:Redの前提mod&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.ichun.us/&#34;&gt;iChunUtil-4.2.2.jar&lt;/a&gt;
+
+&lt;ul&gt;
+&lt;li&gt;iChun氏製modの前提mod&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.industrial-craft.net&#34;&gt;industrialcraft-2-2.2.736-experimental.jar&lt;/a&gt;
+
+&lt;ul&gt;
+&lt;li&gt;電気を追加する&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/Kobata/inventory-tweaks&#34;&gt;InventoryTweaks-1.58-147.jar&lt;/a&gt;
+
+&lt;ul&gt;
+&lt;li&gt;インベントリ整理&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://journeymap.techbrew.net/&#34;&gt;JourneyMap5.0.1_Unlimited_MC1.7.10.jar&lt;/a&gt;
+
+&lt;ul&gt;
+&lt;li&gt;マップmod&lt;/li&gt;
+&lt;li&gt;ミニマップ&lt;/li&gt;
+&lt;li&gt;Way Point&lt;/li&gt;
+&lt;li&gt;Webマップ&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.minecraftforum.net/topic/1831791-&#34;&gt;logisticspipes-0.9.1.15.jar&lt;/a&gt;
+
+&lt;ul&gt;
+&lt;li&gt;BCパイプ追加&lt;/li&gt;
+&lt;li&gt;RP2のチューブを上回ると言われる&lt;/li&gt;
+&lt;li&gt;全自動化補助&lt;/li&gt;
+&lt;li&gt;アイテム輸送&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://minecraft.curseforge.com/mc-mods/minefactory-reloaded/&#34;&gt;MineFactoryReloaded-[1.7.10]2.8.0-104.jar&lt;/a&gt;
+
+&lt;ul&gt;
+&lt;li&gt;アイテム輸送&lt;/li&gt;
+&lt;li&gt;Mob輸送&lt;/li&gt;
+&lt;li&gt;農業系マシン&lt;/li&gt;
+&lt;li&gt;畜産系マシン&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://projectredwiki.com/wiki/Version_archive&#34;&gt;MrTJPCore-1.7.10-1.0.9.22-universal.jar&lt;/a&gt;
+
+&lt;ul&gt;
+&lt;li&gt;MrTJP氏の前提mod&lt;/li&gt;
+&lt;li&gt;Project:Red前提mod&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://xcompwiz.com&#34;&gt;mystcraft-1.7.10-0.11.13.00.jar&lt;/a&gt;
+
+&lt;ul&gt;
+&lt;li&gt;ディメンション追加&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.curse.com/mc-mods/minecraft/225251-nei-integration&#34;&gt;NEIIntegration-MC1.7.10-1.0.11.jar&lt;/a&gt;
+
+&lt;ul&gt;
+&lt;li&gt;NEIアドオン&lt;/li&gt;
+&lt;li&gt;他のmodで追加される機械のレシピを確認できるように&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.minecraftforum.net/forums/mapping-and-modding/minecraft-mods/1279956-chickenbones-mods&#34;&gt;NotEnoughItems-1.7.10-1.0.5.111-universal.jar&lt;/a&gt;
+
+&lt;ul&gt;
+&lt;li&gt;レシピ確認&lt;/li&gt;
+&lt;li&gt;チート系mod&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://ichun.us/mods/portalgun/&#34;&gt;PortalGun-4.0.0-beta-4.jar&lt;/a&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Portal&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Project:RED
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://projectredwiki.com&#34;&gt;ProjectRed-1.7.10-4.7.0pre2.87-Base.jar&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://projectredwiki.com&#34;&gt;ProjectRed-1.7.10-4.7.0pre2.87-Compat.jar&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://projectredwiki.com&#34;&gt;ProjectRed-1.7.10-4.7.0pre2.87-Integration.jar&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://projectredwiki.com&#34;&gt;ProjectRed-1.7.10-4.7.0pre2.87-Lighting.jar&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://projectredwiki.com&#34;&gt;ProjectRed-1.7.10-4.7.0pre2.87-Mechanical_beta.jar&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://projectredwiki.com&#34;&gt;ProjectRed-1.7.10-4.7.0pre2.87-World.jar&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;レッドストーン拡張&lt;/li&gt;
+&lt;li&gt;アイテム輸送
+
+&lt;ul&gt;
+&lt;li&gt;ロジパイプっぽい&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;装飾アイテム&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://railcraft.info/&#34;&gt;Railcraft_1.7.10-9.6.1.0.jar&lt;/a&gt;
+
+&lt;ul&gt;
+&lt;li&gt;レールを増やす&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.teamcofh.com&#34;&gt;RedstoneArsenal-[1.7.10]1.1.0-80.jar&lt;/a&gt;
+
+&lt;ul&gt;
+&lt;li&gt;RFで動作するツール追加&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://forum.minecraftuser.jp/viewtopic.php?f=13&amp;amp;t=1014&#34;&gt;SnowsDeeper-1.1.0-MC1.7.10.jar&lt;/a&gt;
+
+&lt;ul&gt;
+&lt;li&gt;雪を積もらせる&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://forum.minecraftuser.jp/viewtopic.php?t=17975&#34;&gt;Starminer1710-0.9.8bf1.jar&lt;/a&gt;
+
+&lt;ul&gt;
+&lt;li&gt;空中に星を追加&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.teamcofh.com&#34;&gt;ThermalExpansion-[1.7.10]4.0.2B2-210.jar&lt;/a&gt;
+
+&lt;ul&gt;
+&lt;li&gt;RFで動作するマシン&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.teamcofh.com&#34;&gt;ThermalFoundation-[1.7.10]1.2.0B1-95.jar&lt;/a&gt;
+
+&lt;ul&gt;
+&lt;li&gt;TE用鉱石/Mob/中間素材追加&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://forum.minecraftuser.jp/viewtopic.php?t=1014&#34;&gt;TofuCraft-2.1.5-MC1.7.10.jar&lt;/a&gt;
+
+&lt;ul&gt;
+&lt;li&gt;豆腐追加&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.minecraftforum.net/forums/mapping-and-modding/minecraft-mods/1289765-waila-1-5-7-for-1-7-10-1-6-0-for-1-8-1&#34;&gt;Waila-1.5.10_1.7.10.jar&lt;/a&gt;
+
+&lt;ul&gt;
+&lt;li&gt;NEI拡張&lt;/li&gt;
+&lt;li&gt;どのmodのブロックかを表示&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.minecraftforum.net/forums/mapping-and-modding/minecraft-mods/1295067-waila-harvestability-how-can-i-harvest-what-im&#34;&gt;WailaHarvestability-mc1.7.x-1.1.2.jar&lt;/a&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Waila拡張&lt;/li&gt;
+&lt;li&gt;適正ツール表示&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>MinecraftのJarに直接ぶち込む形式のModの導入方法</title>
+      <link>http://replace-this-with-your-hugo-site.com/2015/01/19/install-forge-before-1-dot-5-2/</link>
+      <pubDate>Mon, 19 Jan 2015 07:28:39 +0000</pubDate>
+      
+      <guid>http://replace-this-with-your-hugo-site.com/2015/01/19/install-forge-before-1-dot-5-2/</guid>
+      <description>&lt;p&gt;備忘録&lt;br /&gt;
+だいたいは&lt;a href=&#34;http://ghasts.blog.fc2.com/blog-entry-571.html&#34;&gt;まいんくらふとにっき&lt;/a&gt;を参考に&lt;br /&gt;
+jarファイルでないと実行してくれない模様&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;入れたいバージョンのMinecraft本体をダウンロード&lt;/li&gt;
+&lt;li&gt;入れたいバージョンのMinecraftをコピー&lt;/li&gt;
+&lt;li&gt;欲しいバージョンのForgeをダウンロード&lt;/li&gt;
+&lt;li&gt;Forgeの展開&lt;br /&gt;
+
+&lt;ul&gt;
+&lt;li&gt;展開する前にディレクトリを作成してその中で行う&lt;/li&gt;
+&lt;li&gt;展開のコマンド: &lt;code&gt;unzip filename&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Minecraft本体の展開
+
+&lt;ul&gt;
+&lt;li&gt;新しくディレクトリを作る&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;jar xf 本体.jar&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Minecraft本体のMETA-INF削除
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;rm -rf META-INF&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Forgeをインストール
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;cp -R forge展開先/* minecraft展開先&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;圧縮
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;jar cf 本体.jar -C 展開先/ .&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;圧縮しないとダウンロードしに行こうとする&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;確認
+
+&lt;ul&gt;
+&lt;li&gt;ランチャーを起動してプロファイルの設定をする&lt;/li&gt;
+&lt;li&gt;設定したらMinecraftを起動&lt;/li&gt;
+&lt;li&gt;右下にForgeとか出てきたら成功です&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

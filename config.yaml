@@ -1,0 +1,11 @@
+baseURL: https://virusbb001.github.io/
+disablePathToLower: true
+languageCode: "ja"
+hasCJKLanguage: true
+title: New Hugo Site
+theme: "hyde-x"
+relativeURLs: true
+permalinks:
+  post: /blog/:year/:month/:day/:filename/
+PygmentsCodeFences: true
+pygmentsstyle: "friendly"
