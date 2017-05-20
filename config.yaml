@@ -3,7 +3,6 @@ disablePathToLower: true
 languageCode: "ja"
 defaultContentLanguage: "ja"
 hasCJKLanguage: true
-title: New Hugo Site
 theme: "hyde-x"
 relativeURLs: true
 permalinks:
