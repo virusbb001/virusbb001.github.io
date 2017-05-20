@@ -1,6 +1,7 @@
 baseURL: https://virusbb001.github.io/
 disablePathToLower: true
 languageCode: "ja"
+defaultContentLanguage: "ja"
 hasCJKLanguage: true
 title: New Hugo Site
 theme: "hyde-x"
@@ -9,3 +10,7 @@ permalinks:
   post: /blog/:year/:month/:day/:filename/
 PygmentsCodeFences: true
 pygmentsstyle: "friendly"
+title: "virusbb001's blog"
+
+author:
+  name: "virusbb001"
