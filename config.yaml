@@ -10,6 +10,7 @@ permalinks:
 PygmentsCodeFences: true
 pygmentsstyle: "friendly"
 title: "virusbb001's blog"
+disqusShortName: "virusbb001githubio"
 
 author:
   name: "virusbb001"
