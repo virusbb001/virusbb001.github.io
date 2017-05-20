@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>hugoに移行しました &middot; virusbb001</title>
+
+  
+  <link rel="stylesheet" href="https://virusbb001.github.io/css/poole.css">
+  <link rel="stylesheet" href="https://virusbb001.github.io/css/hyde.css">
+  <link rel="stylesheet" href="https://virusbb001.github.io/css/poole-overrides.css">
+  <link rel="stylesheet" href="https://virusbb001.github.io/css/hyde-overrides.css">
+  <link rel="stylesheet" href="https://virusbb001.github.io/css/hyde-x.css">
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  
+
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://virusbb001.github.io/touch-icon-144-precomposed.png">
+  <link href="https://virusbb001.github.io/favicon.png" rel="icon">
+
+  
+  
+  
+  
+
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  
+</head>
+<body>
+<div class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      
+      <h1>virusbb001</h1>
+      
+    </div>
+
+    <ul class="sidebar-nav">
+      <li class="sidebar-nav-item"><a href="https://virusbb001.github.io/">Blog</a></li>
+      
+    </ul>
+
+    <ul class="sidebar-nav">
+      <li class="sidebar-nav-item">
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      </li>
+    </ul>
+
+    
+
+    <p>Copyright &copy; 2017 <a href="https://virusbb001.github.io/license/">License</a><br/>
+       Powered by <a href="http://gohugo.io">Hugo</a> and <a href="https://github.com/zyro/hyde-x">Hyde-X</a></p>
+  </div>
+</div>
+
+
+<div class="content container">
+  <div class="post">
+    <h1 class="post-title">hugoに移行しました</h1>
+    <span class="post-date">May 3, 2017 &middot; 1 minute read
+    
+    <br/>
+    
+    </span>
+    <p>手順は基本的に <a href="https://gohugo.io/commands/hugo_import_jekyll/">hugo import jekyll</a> に従う。<br />
+URLを無視するならこれで問題ないはずだけど、個人的にはURLは変わってほしくなかったので追加の手順が必要。</p>
+
+<p></p>
+
+<p>以下のコマンドを実行した。<code>hugo server</code> 実行中なら止めてからやったほうが良さそう？</p>
+
+<ol>
+<li>permalinkの設定<br />
+octopressのconfigのpermalinkの設定を <code>/blog/:year/:month/:day/:title/</code> にしていたため、
+<code>config.yaml</code> 内の<code>permalinks</code>の設定を<code>post: /blog/:year/:month/:day/:filename/</code>を追加<br />
+filenameなのはOctopressだった頃のファイル名を <code>YYYY-MM-DD-TITLE.markdown</code>にしたためと、 <code>:title</code> を使用すると表示用のタイトルがURLに含まれてしまうため。</li>
+<li>ファイル名の変更<br />
+前述の通り、ファイル名に年月日が含まれているので取り除く。<br />
+<a href="http://progmemo.wp.xdomain.jp/archives/813">システム開発メモ 正規表現やワイルドカードでファイル名を一括変換する</a>を参考に，<br />
+<code>\ls -1 | grep -E &quot;^[0-9]{4}&quot; | xargs -I % echo -e '%\n%' | sed -r '2~2s:^[0-9]{4}-[0-9]{2}-[0-9]{2}-(.*)$:\1:g' | xargs -n 2 mv</code>を実行。<br />
+grep噛ませているのはすでに作成された記事対策のため。<br /></li>
+<li>urlの設定を消す<br />
+<code>sed -e '/^url:/d' -i.bak *</code><br />
+中身確認して問題なければ<code>rm *.bak</code><br /></li>
+</ol>
+  </div>
+  
+</div>
+
+
+
+
+
+</body>
+</html>
+

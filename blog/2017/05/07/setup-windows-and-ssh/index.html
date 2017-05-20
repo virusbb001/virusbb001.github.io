@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>WindowsからSSH経由で開発するための環境セットアップ &middot; virusbb001</title>
+
+  
+  <link rel="stylesheet" href="https://virusbb001.github.io/css/poole.css">
+  <link rel="stylesheet" href="https://virusbb001.github.io/css/hyde.css">
+  <link rel="stylesheet" href="https://virusbb001.github.io/css/poole-overrides.css">
+  <link rel="stylesheet" href="https://virusbb001.github.io/css/hyde-overrides.css">
+  <link rel="stylesheet" href="https://virusbb001.github.io/css/hyde-x.css">
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  
+
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://virusbb001.github.io/touch-icon-144-precomposed.png">
+  <link href="https://virusbb001.github.io/favicon.png" rel="icon">
+
+  
+  
+  
+  
+
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  
+</head>
+<body>
+<div class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      
+      <h1>virusbb001</h1>
+      
+    </div>
+
+    <ul class="sidebar-nav">
+      <li class="sidebar-nav-item"><a href="https://virusbb001.github.io/">Blog</a></li>
+      
+    </ul>
+
+    <ul class="sidebar-nav">
+      <li class="sidebar-nav-item">
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      </li>
+    </ul>
+
+    
+
+    <p>Copyright &copy; 2017 <a href="https://virusbb001.github.io/license/">License</a><br/>
+       Powered by <a href="http://gohugo.io">Hugo</a> and <a href="https://github.com/zyro/hyde-x">Hyde-X</a></p>
+  </div>
+</div>
+
+
+<div class="content container">
+  <div class="post">
+    <h1 class="post-title">WindowsからSSH経由で開発するための環境セットアップ</h1>
+    <span class="post-date">May 7, 2017 &middot; 1 minute read
+    
+    <br/>
+    <a class="label" href="https://virusbb001.github.io/categories/windows">windows</a>
+    </span>
+    <p>Windowsで開発しようと思って良さそうなターミナルエミュレータがなかったので諦めて
+VirtualBox内にArch Linux入れてSSHで開発できるようにした。</p>
+
+<p></p>
+
+<h1 id="初めに入れたもの">初めに入れたもの</h1>
+
+<ul>
+<li><a href="https://chocolatey.org/">Chocolatey</a>
+
+<ul>
+<li>Windowsパッケージマネージャ</li>
+</ul></li>
+<li><a href="https://msdn.microsoft.com/en-us/commandline/wsl/install_guide">Bash on Ubuntu on Windows</a></li>
+<li><a href="https://www.virtualbox.org/">VirtualBox</a></li>
+<li><a href="http://nanno.dip.jp/softlib/man/rlogin/">RLogin</a>
+
+<ul>
+<li>かなり良さそうなssh等クライアント</li>
+<li>ローカルのシェルはサーバ立ち上げないと使えなさそう</li>
+</ul></li>
+</ul>
+
+<h1 id="chocolateyで入れたもの">Chocolateyで入れたもの</h1>
+
+<ul>
+<li>fonts-ricty-diminished 4.1.0
+
+<ul>
+<li>定番フォント</li>
+</ul></li>
+<li>nmap 7.40</li>
+<li>openssh 0.0.12.0</li>
+<li>ultravnc 1.2120</li>
+<li>virtualbox 5.1.20</li>
+<li>vcxsrv 1.19.2.0
+
+<ul>
+<li>Xサーバ</li>
+<li>原因不明だがEclipse使っていたらランチャーのサイズがおかしくなったので使っていない</li>
+</ul></li>
+<li>MobaXTerm
+
+<ul>
+<li>sshクライアント込だがXサーバとして使用</li>
+</ul></li>
+</ul>
+
+<h2 id="仮想マシン">仮想マシン</h2>
+
+<p>VirtualBox上でArch Linuxをインストール</p>
+
+<h3 id="ネットワーク設定">ネットワーク設定</h3>
+
+<p>NATとホストオンリーアダプタを組み合わせる。
+どちらもケーブル接続に設定。
+仮想マシン側で <a href="https://wiki.archlinuxjp.org/index.php/Systemd-networkd#.E6.9C.89.E7.B7.9A.E3.82.A2.E3.83.80.E3.83.97.E3.82.BF.E3.81.A7.E5.9B.BA.E5.AE.9A_IP_.E3.82.92.E4.BD.BF.E7.94.A8">Arch Linux Wiki systemd-networkd#有線アダプタで固定IPを使用</a>を参考に設定を行う。
+Gatewayの設定は省略できる。</p>
+
+<h3 id="x-クリップボード">X クリップボード</h3>
+
+<p>MobaXTermサーバではクリップボードに何か入れたければ <code>xclip -in</code> で入れることができる。
+xselとかもあるのでそのあたりはお好みで。</p>
+  </div>
+  
+</div>
+
+
+
+
+
+</body>
+</html>
+

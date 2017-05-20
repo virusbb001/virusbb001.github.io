@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>virusbb001&#39;s blog</title>
+    <link>https://virusbb001.github.io/</link>
+    <description>Recent content on virusbb001&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Sun, 07 May 2017 17:53:32 +0900</lastBuildDate>
+    
+	<atom:link href="https://virusbb001.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>WindowsからSSH経由で開発するための環境セットアップ</title>
+      <link>https://virusbb001.github.io/blog/2017/05/07/setup-windows-and-ssh/</link>
+      <pubDate>Sun, 07 May 2017 17:53:32 +0900</pubDate>
+      
+      <guid>https://virusbb001.github.io/blog/2017/05/07/setup-windows-and-ssh/</guid>
+      <description>&lt;p&gt;Windowsで開発しようと思って良さそうなターミナルエミュレータがなかったので諦めて
+VirtualBox内にArch Linux入れてSSHで開発できるようにした。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>hugoに移行しました</title>
+      <link>https://virusbb001.github.io/blog/2017/05/03/migrate-to-hugo/</link>
+      <pubDate>Wed, 03 May 2017 00:02:50 +0900</pubDate>
+      
+      <guid>https://virusbb001.github.io/blog/2017/05/03/migrate-to-hugo/</guid>
+      <description>&lt;p&gt;手順は基本的に &lt;a href=&#34;https://gohugo.io/commands/hugo_import_jekyll/&#34;&gt;hugo import jekyll&lt;/a&gt; に従う。&lt;br /&gt;
+URLを無視するならこれで問題ないはずだけど、個人的にはURLは変わってほしくなかったので追加の手順が必要。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Minecraft1.7.10mod構成</title>
+      <link>https://virusbb001.github.io/blog/2015/07/05/minecraft-1-dot-7-10-mods/</link>
+      <pubDate>Sun, 05 Jul 2015 15:57:11 +0000</pubDate>
+      
+      <guid>https://virusbb001.github.io/blog/2015/07/05/minecraft-1-dot-7-10-mods/</guid>
+      <description>&lt;p&gt;入れてるmodリスト&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>高専生に50の質問</title>
+      <link>https://virusbb001.github.io/blog/2015/05/05/50-questions-for-nit-students/</link>
+      <pubDate>Tue, 05 May 2015 22:35:01 +0000</pubDate>
+      
+      <guid>https://virusbb001.github.io/blog/2015/05/05/50-questions-for-nit-students/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://moonchronicle.blog.shinobi.jp/%E9%9B%91%E8%A8%98/%E9%AB%98%E5%B0%82%E7%94%9F%E3%81%AB%EF%BC%95%EF%BC%90%E3%81%AE%E8%B3%AA%E5%95%8F&#34;&gt;高専生に50の質問&lt;/a&gt;というのを見つけてしまったのでやってみます。元サイトはもう無くなってるらしいです&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>意識が低い人間がどうやって内定を取ったか</title>
+      <link>https://virusbb001.github.io/blog/2015/04/30/seriously-will-you-really-employ-me/</link>
+      <pubDate>Thu, 30 Apr 2015 07:49:13 +0000</pubDate>
+      
+      <guid>https://virusbb001.github.io/blog/2015/04/30/seriously-will-you-really-employ-me/</guid>
+      <description>&lt;h2 id=&#34;内定を得ました&#34;&gt;内定を得ました&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;./blog/2015/03/30/student-hunting-report/&#34;&gt;逆求人フェスティバル&lt;/a&gt;で面談した会社から内定を頂きました。&lt;br /&gt;
+&lt;del&gt;私からは以上です。&lt;/del&gt; &lt;a href=&#34;https://twitter.com/virusVer001/status/573792496666304512&#34;&gt;Twitter&lt;/a&gt;でタイトルまで指定してﾂｲｯﾄしてしまったのでまじめに書きます。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>3/29 逆求人フェスティバル参加報告</title>
+      <link>https://virusbb001.github.io/blog/2015/03/30/student-hunting-report/</link>
+      <pubDate>Mon, 30 Mar 2015 00:36:41 +0000</pubDate>
+      
+      <guid>https://virusbb001.github.io/blog/2015/03/30/student-hunting-report/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://www.studenthunting.com/&#34;&gt;逆求人フェスティバル&lt;/a&gt;に参加してきました。&lt;br /&gt;
+逆求人フェスティバルの参加は初めてです。&lt;br /&gt;
+正直余計なこと書いてないか少し不安です。&lt;br /&gt;
+内定取ったらまた別に記事を書こうと思います。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>意識低い高専生がどうやって仕事を手にしたか</title>
+      <link>https://virusbb001.github.io/blog/2015/03/10/how-did-i-get-a-job/</link>
+      <pubDate>Tue, 10 Mar 2015 01:11:11 +0000</pubDate>
+      
+      <guid>https://virusbb001.github.io/blog/2015/03/10/how-did-i-get-a-job/</guid>
+      <description>&lt;p&gt;就活の備忘録です&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>ゲームしながらプログラミングできそうなの</title>
+      <link>https://virusbb001.github.io/blog/2015/02/10/programming-and-game/</link>
+      <pubDate>Tue, 10 Feb 2015 17:46:25 +0000</pubDate>
+      
+      <guid>https://virusbb001.github.io/blog/2015/02/10/programming-and-game/</guid>
+      <description>&lt;p&gt;ゲームしながらプログラミング出来そうなもの個人的なまとめ&lt;br /&gt;
+他に面白そうなのあったら教えて&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>MinecraftのJarに直接ぶち込む形式のModの導入方法</title>
+      <link>https://virusbb001.github.io/blog/2015/01/19/install-forge-before-1-dot-5-2/</link>
+      <pubDate>Mon, 19 Jan 2015 07:28:39 +0000</pubDate>
+      
+      <guid>https://virusbb001.github.io/blog/2015/01/19/install-forge-before-1-dot-5-2/</guid>
+      <description>&lt;p&gt;備忘録&lt;br /&gt;
+だいたいは&lt;a href=&#34;http://ghasts.blog.fc2.com/blog-entry-571.html&#34;&gt;まいんくらふとにっき&lt;/a&gt;を参考に&lt;br /&gt;
+jarファイルでないと実行してくれない模様&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>~~2015年~~ 死ぬまでにやりたいこと</title>
+      <link>https://virusbb001.github.io/blog/2015/01/15/todo-2015/</link>
+      <pubDate>Thu, 15 Jan 2015 10:38:53 +0000</pubDate>
+      
+      <guid>https://virusbb001.github.io/blog/2015/01/15/todo-2015/</guid>
+      <description>&lt;p&gt;以下 &lt;del&gt;2015年&lt;/del&gt; 死ぬまでにやりたいことのリスト&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>TOEIC</title>
+      <link>https://virusbb001.github.io/blog/2015/01/10/toeic/</link>
+      <pubDate>Sat, 10 Jan 2015 22:38:08 +0000</pubDate>
+      
+      <guid>https://virusbb001.github.io/blog/2015/01/10/toeic/</guid>
+      <description>ダメでした</description>
+    </item>
+    
+    <item>
+      <title>Octopressのセットアップのメモ</title>
+      <link>https://virusbb001.github.io/blog/2015/01/09/my-probrem-of-setting-up-octopress/</link>
+      <pubDate>Fri, 09 Jan 2015 17:53:51 +0000</pubDate>
+      
+      <guid>https://virusbb001.github.io/blog/2015/01/09/my-probrem-of-setting-up-octopress/</guid>
+      <description>セットアップにはOctopressでGitHub無料ブログ構築。sourceをBitbucket管理。簡単ガイド！ - 酒と泪とRubyとRai</description>
+    </item>
+    
+    <item>
+      <title>ブログ始めました</title>
+      <link>https://virusbb001.github.io/blog/2015/01/08/i-will-try-blog/</link>
+      <pubDate>Thu, 08 Jan 2015 18:36:09 +0000</pubDate>
+      
+      <guid>https://virusbb001.github.io/blog/2015/01/08/i-will-try-blog/</guid>
+      <description>Octopressなるものを入れてブログを作れるらしいです 最近は便利ですね</description>
+    </item>
+    
+  </channel>
+</rss>
