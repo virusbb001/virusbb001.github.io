@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
 
-  <title>WindowsからSSH経由で開発するための環境セットアップ &middot; virusbb001</title>
+  <title>Vimで始めるGo &middot; virusbb001</title>
 
   
   <link rel="stylesheet" href="https://virusbb001.github.io/css/poole.css">
@@ -29,7 +29,7 @@
   
   
 
-  <meta name="description" content="">
+  <meta name="description" content="VimでGo言語触ってみたことの覚書">
   <meta name="keywords" content="">
   
   <script>
@@ -81,75 +81,61 @@
 
 <div class="content container">
   <div class="post">
-    <h1 class="post-title">WindowsからSSH経由で開発するための環境セットアップ</h1>
-    <span class="post-date">May 7, 2017 &middot; 1 minute read &middot; <a href="https://virusbb001.github.io/blog/2017/05/07/setup-windows-and-ssh/#disqus_thread">Comments</a>
+    <h1 class="post-title">Vimで始めるGo</h1>
+    <span class="post-date">Jun 9, 2017 &middot; 2 minute read &middot; <a href="https://virusbb001.github.io/blog/2017/06/09/go-golang-with-vim/#disqus_thread">Comments</a>
     
     <br/>
-    <a class="label" href="https://virusbb001.github.io/categories/windows">windows</a>
+    <a class="label" href="https://virusbb001.github.io/categories/programming">programming</a><a class="label" href="https://virusbb001.github.io/categories/Golang">Golang</a><a class="label" href="https://virusbb001.github.io/categories/Vim">Vim</a>
     </span>
-    <p>Windowsで開発しようと思って良さそうなターミナルエミュレータがなかったので諦めて
-VirtualBox内にArch Linux入れてSSHで開発できるようにした。</p>
+    <p>Go言語を軽く触りました。敵情視察というわけではないですがGo言語について、
+&ldquo;ほら見てGolang wwwwwwww&rdquo;しか言えないのはちょっとあれだなと思ったので以下に
+簡単なやったこととか感想とかを殴り書きしようと思います。</p>
 
 <p></p>
 
-<h1 id="初めに入れたもの">初めに入れたもの</h1>
+<h2 id="環境">環境</h2>
 
 <ul>
-<li><a href="https://chocolatey.org/">Chocolatey</a>
-
-<ul>
-<li>Windowsパッケージマネージャ</li>
-</ul></li>
-<li><a href="https://msdn.microsoft.com/en-us/commandline/wsl/install_guide">Bash on Ubuntu on Windows</a></li>
-<li><a href="https://www.virtualbox.org/">VirtualBox</a></li>
-<li><a href="http://nanno.dip.jp/softlib/man/rlogin/">RLogin</a>
-
-<ul>
-<li>かなり良さそうなssh等クライアント</li>
-<li>ローカルのシェルはサーバ立ち上げないと使えなさそう</li>
-</ul></li>
+<li>Arch Linux</li>
+<li>Go 1.8.3 linux/amd64</li>
+<li>Vim 8.0 1-586</li>
 </ul>
 
-<h1 id="chocolateyで入れたもの">Chocolateyで入れたもの</h1>
+<h2 id="go言語と触れる">Go言語と触れる</h2>
 
-<ul>
-<li>fonts-ricty-diminished 4.1.0
+<p>とりあえず触るだけ触ってみます。Go言語は<a href="https://golang.org/#">公式サイト</a>から実際にコードを
+動かすことができます。便利な時代ですね。</p>
 
-<ul>
-<li>定番フォント</li>
-</ul></li>
-<li>nmap 7.40</li>
-<li>openssh 0.0.12.0</li>
-<li>ultravnc 1.2120</li>
-<li>virtualbox 5.1.20</li>
-<li>vcxsrv 1.19.2.0
+<p>一通りサンプルを眺めて、勉強したくなったら<a href="https://go-tour-jp.appspot.com/welcome/1">A Tour of Go(日本語)</a>
+で言語の機能を一通り勉強することができます。</p>
 
-<ul>
-<li>Xサーバ</li>
-<li>原因不明だがEclipse使っていたらランチャーのサイズがおかしくなったので使っていない</li>
-</ul></li>
-<li>MobaXTerm
+<p>ある程度進めていくと(あるいは進めなくても)、<a href="http://www.vim.org">Vim</a>が使いたくなってくると思います。
+いい機会なのでGo言語開発環境とGo言語用のプラグインを入れます。</p>
 
-<ul>
-<li>sshクライアント込だがXサーバとして使用</li>
-</ul></li>
-</ul>
+<h2 id="vimでgoを書く">VimでGoを書く</h2>
 
-<h2 id="仮想マシン">仮想マシン</h2>
+<p>まずArch LinuxにGoを入れます。<a href="https://wiki.archlinuxjp.org/index.php/Go">Arch LinuxのWikiの日本語のGoのページ</a>があるのでそれに従います。いい時代になりましたね。
+今回は<code>pacman -S go</code>を行いました。</p>
 
-<p>VirtualBox上でArch Linuxをインストール</p>
+<h2 id="goのテスト兼hello-世界">Goのテスト兼Hello, 世界</h2>
 
-<h3 id="ネットワーク設定">ネットワーク設定</h3>
+<p><code>go</code>が正常に動作するかも兼ねて、実際にGo言語の動作確認を行います。</p>
 
-<p>NATとホストオンリーアダプタを組み合わせる。
-どちらもケーブル接続に設定。
-仮想マシン側で <a href="https://wiki.archlinuxjp.org/index.php/Systemd-networkd#.E6.9C.89.E7.B7.9A.E3.82.A2.E3.83.80.E3.83.97.E3.82.BF.E3.81.A7.E5.9B.BA.E5.AE.9A_IP_.E3.82.92.E4.BD.BF.E7.94.A8">Arch Linux Wiki systemd-networkd#有線アダプタで固定IPを使用</a>を参考に設定を行う。
-Gatewayの設定は省略できる。</p>
+<p>適当なディレクトリに以下のHello Worldプログラムを書きます。なお執筆時点でのVimには標準でGo言語のシンタックスファイルが有るようです。</p>
+<div class="highlight" style="background: #f0f0f0"><pre style="line-height: 125%"><span></span><span style="color: #007020; font-weight: bold">package</span> main
 
-<h3 id="x-クリップボード">X クリップボード</h3>
+<span style="color: #007020; font-weight: bold">import</span> <span style="color: #4070a0">&quot;fmt&quot;</span>
 
-<p>MobaXTermサーバではクリップボードに何か入れたければ <code>xclip -in</code> で入れることができる。
-xselとかもあるのでそのあたりはお好みで。</p>
+<span style="color: #007020; font-weight: bold">func</span> main() {
+	fmt.Println(<span style="color: #4070a0">&quot;Hello, World!&quot;</span>)
+}
+</pre></div>
+
+<p><code>:w hello.go</code>したあと、<code>:!go run</code>をします。
+<code>Hello, World!</code>と出てきたらGoは正常に動作しています。これでGo言語を使って仕事をしているときに&rdquo;この実行結果を見てgo run wwwwwww`と言うことができるようになりました。やりましたね。</p>
+
+<p>また、コンパイルも正常に動作するかを確認します。
+<code>:q</code>したあと、<code>go build hello.go</code> を行いビルドします。実行ファイル(執筆時点では<code>hello</code>)ができていることを確認し、実行して<code>go run</code>した時と同じ結果が出るかを確認します。</p>
   </div>
   <div id="disqus_thread"></div>
 </div>

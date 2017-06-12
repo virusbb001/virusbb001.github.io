@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Golang on virusbb001&#39;s blog</title>
+    <link>https://virusbb001.github.io/categories/golang/</link>
+    <description>Recent content in Golang on virusbb001&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Fri, 09 Jun 2017 01:05:51 +0900</lastBuildDate>
+    
+	<atom:link href="https://virusbb001.github.io/categories/golang/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Vimで始めるGo</title>
+      <link>https://virusbb001.github.io/blog/2017/06/09/go-golang-with-vim/</link>
+      <pubDate>Fri, 09 Jun 2017 01:05:51 +0900</pubDate>
+      
+      <guid>https://virusbb001.github.io/blog/2017/06/09/go-golang-with-vim/</guid>
+      <description>&lt;p&gt;Go言語を軽く触りました。敵情視察というわけではないですがGo言語について、
+&amp;ldquo;ほら見てGolang wwwwwwww&amp;rdquo;しか言えないのはちょっとあれだなと思ったので以下に
+簡単なやったこととか感想とかを殴り書きしようと思います。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
