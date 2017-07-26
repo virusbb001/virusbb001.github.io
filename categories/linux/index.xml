@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Linux on virusbb001&#39;s blog</title>
+    <link>https://virusbb001.github.io/categories/linux/</link>
+    <description>Recent content in Linux on virusbb001&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Wed, 26 Jul 2017 22:42:45 +0900</lastBuildDate>
+    
+	<atom:link href="https://virusbb001.github.io/categories/linux/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>#GentooInstallBattle を終えてカーネルの設定いじってインストールし直したら起動しなくて焦った話</title>
+      <link>https://virusbb001.github.io/blog/2017/07/26/gentoo-boot-failed/</link>
+      <pubDate>Wed, 26 Jul 2017 22:42:45 +0900</pubDate>
+      
+      <guid>https://virusbb001.github.io/blog/2017/07/26/gentoo-boot-failed/</guid>
+      <description>表題のとおりです。 環境 VirtualBox 5.1.24 Gentoo Linux EFI有効化 cat /etc/gentoo-release Gentoo Base System release 2.3 uname -r 4.9.34-gentoo 手順 #GentooInstallBattle を終える GentooWikiのVirtualBoxの記事を見ながらカーネ</description>
+    </item>
+    
+  </channel>
+</rss>
