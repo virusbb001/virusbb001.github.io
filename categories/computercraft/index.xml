@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Computercraft on virusbb001&#39;s blog</title>
+    <link>https://virusbb001.github.io/categories/computercraft/</link>
+    <description>Recent content in Computercraft on virusbb001&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Mon, 17 Sep 2018 01:38:20 +0900</lastBuildDate>
+    
+	<atom:link href="https://virusbb001.github.io/categories/computercraft/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>ComputerCraftチートシート</title>
+      <link>https://virusbb001.github.io/blog/2018/09/17/computercraft-cheat-sheet/</link>
+      <pubDate>Mon, 17 Sep 2018 01:38:20 +0900</pubDate>
+      
+      <guid>https://virusbb001.github.io/blog/2018/09/17/computercraft-cheat-sheet/</guid>
+      <description>リファレンスへのリンクは和訳の方を張ります。 Term I/O 多分 src/main/resources/assets/computercraft/lua/bios.lua にある程度乗っている write(Mixed Data): 改行なし出力 CC Wiki print(string text): 改行あり出力 CC Wiki string read([char replacement [, table history [,function auto complete ]] ]): 入力</description>
+    </item>
+    
+  </channel>
+</rss>

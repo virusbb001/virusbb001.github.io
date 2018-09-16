@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>ComputerCraftチートシート &middot; virusbb001</title>
+
+  
+  <link rel="stylesheet" href="https://virusbb001.github.io/css/poole.css">
+  <link rel="stylesheet" href="https://virusbb001.github.io/css/hyde.css">
+  <link rel="stylesheet" href="https://virusbb001.github.io/css/poole-overrides.css">
+  <link rel="stylesheet" href="https://virusbb001.github.io/css/hyde-overrides.css">
+  <link rel="stylesheet" href="https://virusbb001.github.io/css/hyde-x.css">
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  
+
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://virusbb001.github.io/touch-icon-144-precomposed.png">
+  <link href="https://virusbb001.github.io/favicon.png" rel="icon">
+
+  
+  
+  
+  
+
+  <meta name="description" content="ComputerCraftの基本コマンドとかをまとめたもの">
+  <meta name="keywords" content="minecraft,computercraft,lua">
+  
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-58571979-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+  
+</head>
+<body>
+<div class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      
+      <h1>virusbb001</h1>
+      
+    </div>
+
+    <ul class="sidebar-nav">
+      <li class="sidebar-nav-item"><a href="https://virusbb001.github.io/">Blog</a></li>
+      
+    </ul>
+
+    <ul class="sidebar-nav">
+      <li class="sidebar-nav-item">
+      <a href="https://github.com/virusbb001/"><i class="fa fa-github-square fa-3x"></i></a>
+      
+      
+      
+      
+      
+      <a href="https://twitter.com/virusVer001"><i class="fa fa-twitter-square fa-3x"></i></a>
+      
+      
+      </li>
+    </ul>
+
+    
+
+    <p>Copyright &copy; 2018 <a href="https://virusbb001.github.io/license/">License</a><br/>
+       Powered by <a href="http://gohugo.io">Hugo</a> and <a href="https://github.com/zyro/hyde-x">Hyde-X</a></p>
+
+  </div>
+</div>
+
+
+<div class="content container">
+  <div class="post">
+    <h1 class="post-title">ComputerCraftチートシート</h1>
+    <span class="post-date">Sep 17, 2018 &middot; 1 minute read &middot; <a href="https://virusbb001.github.io/blog/2018/09/17/computercraft-cheat-sheet/#disqus_thread">Comments</a>
+    
+    <br/>
+    <a class="label" href="https://virusbb001.github.io/categories/minecraft">minecraft</a><a class="label" href="https://virusbb001.github.io/categories/computercraft">computercraft</a><a class="label" href="https://virusbb001.github.io/categories/lua">lua</a>
+    </span>
+    
+
+<p>リファレンスへのリンクは和訳の方を張ります。</p>
+
+<h2 id="term-i-o">Term I/O</h2>
+
+<p>多分 <a href="https://github.com/dan200/ComputerCraft/blob/master/src/main/resources/assets/computercraft/lua/bios.lua">src/main/resources/assets/computercraft/lua/bios.lua</a> にある程度乗っている</p>
+
+<ul>
+<li><code>write(Mixed Data)</code>: 改行なし出力 <a href="http://www.computercraft.info/wiki/Write">CC Wiki</a></li>
+<li><code>print(string text)</code>: 改行あり出力 <a href="http://www.computercraft.info/wiki/Print">CC Wiki</a></li>
+<li><code>string read([char replacement [, table history [,function auto complete ]] ])</code>: 入力 <a href="http://www.computercraft.info/wiki/Read">CC Wiki</a></li>
+</ul>
+
+<h2 id="cast">cast</h2>
+
+<ul>
+<li><code>tostring(Object o)</code> <a href="http://www.computercraft.info/wiki/Tostring">CC Wiki</a></li>
+<li><code>tonumber(string number [, number base])</code> <a href="http://www.computercraft.info/wiki/Tonumber">CC Wiki</a></li>
+</ul>
+
+<h2 id="演算子">演算子</h2>
+
+<p><a href="http://milkpot.sakura.ne.jp/lua/lua51_manual_ja.html#2.5">Lua リファレンスマニュアル</a></p>
+
+<ul>
+<li>算術演算子
+
+<ul>
+<li><code>+</code>,<code>-</code>,<code>*</code>,<code>/</code>,<code>%</code>,<code>^</code></li>
+</ul></li>
+<li>関係演算子
+
+<ul>
+<li><code>==</code>, <code>~=</code>,<code>&lt;</code>,<code>&gt;</code>,<code>&lt;=</code>,<code>&gt;=</code></li>
+</ul></li>
+<li>論理演算子
+
+<ul>
+<li><code>and</code>,<code>or</code>,<code>not</code></li>
+</ul></li>
+<li>文字列連結
+
+<ul>
+<li><code>..</code></li>
+</ul></li>
+<li>長さ演算子
+
+<ul>
+<li><code>#</code></li>
+</ul></li>
+</ul>
+
+<h2 id="テーブル-配列">テーブル/配列</h2>
+
+<p>配列はテーブル</p>
+
+<p><code>{1,5,10,50,100,key=&quot;key&quot;}</code></p>
+
+<h2 id="ループ">ループ</h2>
+
+<p><a href="http://milkpot.sakura.ne.jp/lua/lua51_manual_ja.html#2.4.4">Lua リファレンスマニュアル 2.4.4-2.4.5</a></p>
+<div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-lua" data-lang="lua"><span style="color:#007020;font-weight:bold">while</span> cond <span style="color:#007020;font-weight:bold">do</span>
+  proc()
+<span style="color:#007020;font-weight:bold">end</span>
+
+<span style="color:#007020;font-weight:bold">repeat</span>
+  proc()
+<span style="color:#007020;font-weight:bold">until</span> cond
+
+<span style="color:#007020;font-weight:bold">for</span> i <span style="color:#666">=</span> start, <span style="color:#007020;font-weight:bold">end</span>, step <span style="color:#007020;font-weight:bold">do</span>
+  proc()
+<span style="color:#007020;font-weight:bold">end</span></code></pre></div>
+<h3 id="走査">走査</h3>
+
+<p>大抵は <a href="http://milkpot.sakura.ne.jp/lua/lua51_manual_ja.html#pdf-pairs">pairs(table)</a>, <a href="http://milkpot.sakura.ne.jp/lua/lua51_manual_ja.html#pdf-ipairs">ipairs(array)</a> で事足りると思う。</p>
+
+<pre><code>for k,v in pairs(table) do
+  -- すべてのキーが操作される
+end
+
+for i,v in ipairs(array) do
+  -- [1]...[n] のみ走査される
+end
+</code></pre>
+
+<h3 id="カスタム走査">カスタム走査</h3>
+
+<p><details>
+<summary>
+<a href="http://milkpot.sakura.ne.jp/lua/lua51_manual_ja.html#2.4.5">汎用for文</a>の等価コードを参考に作成する
+</summary></p>
+
+<p>TODO: カスタムコンテナをここに
+</details></p>
+
+<h2 id="参考リンク">参考リンク</h2>
+
+<ul>
+<li><a href="https://www.lua.org/manual/5.1/">Lua 5.1 Reference Manual</a></li>
+<li><a href="http://milkpot.sakura.ne.jp/lua/lua51_manual_ja.html">Lua 5.1 リファレンスマニュアル和訳</a></li>
+<li><a href="http://www.computercraft.info/wiki/Main_Page">ComputerCraft Wiki</a></li>
+<li><a href="https://devhints.io/lua">Lua Cheatsheet</a></li>
+</ul>
+
+  </div>
+  <div id="disqus_thread"></div>
+</div>
+
+
+<script type="text/javascript">
+var disqus_shortname = "virusbb001githubio";
+(function () {
+    var s = document.createElement('script'); s.async = true;
+    s.type = 'text/javascript';
+    s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+    (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+}());
+</script>
+
+
+
+<script type="text/javascript">
+    var disqus_shortname = "virusbb001githubio";
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+</body>
+</html>
+
