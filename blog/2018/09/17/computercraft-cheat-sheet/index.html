@@ -83,7 +83,7 @@
 <div class="content container">
   <div class="post">
     <h1 class="post-title">ComputerCraftチートシート</h1>
-    <span class="post-date">Sep 17, 2018 &middot; 1 minute read &middot; <a href="https://virusbb001.github.io/blog/2018/09/17/computercraft-cheat-sheet/#disqus_thread">Comments</a>
+    <span class="post-date">Sep 17, 2018 &middot; 2 minute read &middot; <a href="https://virusbb001.github.io/blog/2018/09/17/computercraft-cheat-sheet/#disqus_thread">Comments</a>
     
     <br/>
     <a class="label" href="https://virusbb001.github.io/categories/minecraft">minecraft</a><a class="label" href="https://virusbb001.github.io/categories/computercraft">computercraft</a><a class="label" href="https://virusbb001.github.io/categories/lua">lua</a>
@@ -141,6 +141,33 @@
 </ul></li>
 </ul>
 
+<h2 id="if文">if文</h2>
+
+<p><a href="http://milkpot.sakura.ne.jp/lua/lua51_manual_ja.html#2.4.4">Lua リファレンスマニュアル</a></p>
+<div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-lua" data-lang="lua"><span style="color:#007020;font-weight:bold">if</span> cond <span style="color:#007020;font-weight:bold">then</span>
+  proc()
+<span style="color:#007020;font-weight:bold">elseif</span> cond <span style="color:#007020;font-weight:bold">then</span>
+  proc()
+<span style="color:#007020;font-weight:bold">else</span>
+  proc()
+<span style="color:#007020;font-weight:bold">end</span></code></pre></div>
+<h2 id="関数">関数</h2>
+<div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-lua" data-lang="lua"><span style="color:#007020;font-weight:bold">function</span> <span style="color:#06287e">myFunc</span>(a,b,...)
+  print(<span style="color:#4070a0">&#34;a: &#34;</span> <span style="color:#666">..</span> a <span style="color:#666">..</span> <span style="color:#4070a0">&#34;</span><span style="color:#4070a0;font-weight:bold">\n</span><span style="color:#4070a0">b: &#34;</span> <span style="color:#666">..</span> b <span style="color:#666">..</span> <span style="color:#4070a0">&#34; other</span><span style="color:#4070a0;font-weight:bold">\n</span><span style="color:#4070a0">&#34;</span>, ...)
+  <span style="color:#007020;font-weight:bold">return</span> proc()
+<span style="color:#007020;font-weight:bold">end</span>
+
+<span style="color:#007020;font-weight:bold">function</span> <span style="color:#0e84b5;font-weight:bold">t</span>.<span style="color:#0e84b5;font-weight:bold">a</span>.<span style="color:#0e84b5;font-weight:bold">b</span>.<span style="color:#0e84b5;font-weight:bold">c</span>:<span style="color:#06287e">f</span> (...)
+  <span style="color:#60a0b0;font-style:italic">-- 暗黙の引数selfが渡される</span>
+  proc()
+<span style="color:#007020;font-weight:bold">end</span></code></pre></div>
+<h3 id="多値">多値</h3>
+
+<p><code>...</code> で表す <a href="http://milkpot.sakura.ne.jp/lua/lua51_manual_ja.html#2.5">Lua リファレンスマニュアル 2.5 式</a></p>
+<div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-lua" data-lang="lua">select(<span style="color:#40a070">1</span>,...) <span style="color:#60a0b0;font-style:italic">-- 最初</span>
+select(<span style="color:#4070a0">&#34;#&#34;</span>, ...) <span style="color:#60a0b0;font-style:italic">-- 個数</span>
+{...} <span style="color:#60a0b0;font-style:italic">-- テーブル化</span>
+<span style="color:#007020;font-weight:bold">local</span> a, b <span style="color:#666">=</span> ... <span style="color:#60a0b0;font-style:italic">-- 代入 足りない文はnilになる</span></code></pre></div>
 <h2 id="テーブル-配列">テーブル/配列</h2>
 
 <p>配列はテーブル</p>
@@ -183,6 +210,33 @@ end
 
 <p>TODO: カスタムコンテナをここに
 </details></p>
+
+<h2 id="外部ファイル読み込み">外部ファイル読み込み</h2>
+
+<p><details>
+<summary></p>
+<div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-lua" data-lang="lua"><span style="color:#60a0b0;font-style:italic">-- module.lua</span>
+<span style="color:#007020;font-weight:bold">return</span> <span style="color:#40a070">42</span>
+
+<span style="color:#60a0b0;font-style:italic">-- load</span>
+<span style="color:#007020;font-weight:bold">local</span> mod <span style="color:#666">=</span> require(<span style="color:#4070a0">&#34;module&#34;</span>)
+print(mode) <span style="color:#60a0b0;font-style:italic">-- output 42</span></code></pre></div>
+<p></summary></p>
+
+<p><a href="http://milkpot.sakura.ne.jp/lua/lua51_manual_ja.html#pdf-require">Lua リファレンス 5.3 モジュール</a></p>
+
+<ol>
+<li><code>package.loaded[modname]</code> があればそれを返す(再読込はこれを<code>nil</code>にする)</li>
+<li><code>package.preload[modname]</code> があればそれをローダとする (TODO: テスト)</li>
+<li>なければ <code>package.path</code> (デフォルト: <code>?;?.lua;?/init.lua</code>) を探してファイル内容をローダとする
+<code>?</code>がモジュール名相当<br />
+パスは<code>.</code> で区切られる<br /></li>
+<li>ローダにモジュール名<code>modname</code>を渡して実行する <code>...</code> で参照できる nilならrequireされていない</li>
+<li>返ってきたものを <code>package.loaded[modname]</code> に入れる。 何も返ってこなければ<code>true</code>を入れる</li>
+<li><code>package.loaded[modname]</code> を返す</li>
+</ol>
+
+<p></details></p>
 
 <h2 id="参考リンク">参考リンク</h2>
 
