@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>Xonshでgit bisectを試してみた &middot; virusbb001</title>
+
+  
+  <link rel="stylesheet" href="https://virusbb001.github.io/css/poole.css">
+  <link rel="stylesheet" href="https://virusbb001.github.io/css/hyde.css">
+  <link rel="stylesheet" href="https://virusbb001.github.io/css/poole-overrides.css">
+  <link rel="stylesheet" href="https://virusbb001.github.io/css/hyde-overrides.css">
+  <link rel="stylesheet" href="https://virusbb001.github.io/css/hyde-x.css">
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  
+
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://virusbb001.github.io/touch-icon-144-precomposed.png">
+  <link href="https://virusbb001.github.io/favicon.png" rel="icon">
+
+  
+  
+  
+  
+
+  <meta name="description" content="xonshでdockerを使ってgitを試してみた">
+  <meta name="keywords" content="git,docker">
+  
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-58571979-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+  
+</head>
+<body>
+<div class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      
+      <h1>virusbb001</h1>
+      
+    </div>
+
+    <ul class="sidebar-nav">
+      <li class="sidebar-nav-item"><a href="https://virusbb001.github.io/">Blog</a></li>
+      
+    </ul>
+
+    <ul class="sidebar-nav">
+      <li class="sidebar-nav-item">
+      <a href="https://github.com/virusbb001/"><i class="fa fa-github-square fa-3x"></i></a>
+      
+      
+      
+      
+      
+      <a href="https://twitter.com/virusVer001"><i class="fa fa-twitter-square fa-3x"></i></a>
+      
+      
+      </li>
+    </ul>
+
+    
+
+    <p>Copyright &copy; 2018 <a href="https://virusbb001.github.io/license/">License</a><br/>
+       Powered by <a href="http://gohugo.io">Hugo</a> and <a href="https://github.com/zyro/hyde-x">Hyde-X</a></p>
+
+  </div>
+</div>
+
+
+<div class="content container">
+  <div class="post">
+    <h1 class="post-title">Xonshでgit bisectを試してみた</h1>
+    <span class="post-date">Nov 2, 2018 &middot; 1 minute read &middot; <a href="https://virusbb001.github.io/blog/2018/11/02/try-git-bisect/#disqus_thread">Comments</a>
+    
+    <br/>
+    <a class="label" href="https://virusbb001.github.io/categories/git">git</a>
+    </span>
+    
+
+<h2 id="目的">目的</h2>
+
+<p>xonshrc内で<code>import neovim</code> をすると<code>neovim</code> が同じバージョンであるにもかかわらず <a href="https://docs.python.org/ja/3/library/imp.html"><code>imp</code></a> に関する警告が出るようになったため、それが発生した箇所・原因を特定する。</p>
+
+<h2 id="環境">環境</h2>
+
+<ul>
+<li>git version 2.19.1</li>
+<li>Docker version 18.06.1-ce, build e68fc7a215</li>
+<li><a href="https://github.com/xonsh/xonsh">xonsh</a></li>
+</ul>
+
+<h2 id="下準備">下準備</h2>
+
+<p><code>git checkout</code> して<code>docker build</code> なしでできるように以下のDockerfileでイメージを作成しておく</p>
+<div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-docker" data-lang="docker"><span style="color:#007020;font-weight:bold">from</span><span style="color:#4070a0"> python:3.6</span><span style="">
+</span><span style=""></span><span style="color:#007020;font-weight:bold">RUN</span> pip install --upgrade pip <span style="color:#666">&amp;&amp;</span> pip install <span style="color:#4070a0;font-weight:bold">\
+</span><span style="color:#4070a0;font-weight:bold"></span>  ply <span style="color:#4070a0;font-weight:bold">\
+</span><span style="color:#4070a0;font-weight:bold"></span>  prompt-toolkit<span style="color:#666">==</span><span style="color:#40a070">2</span>.0.4 <span style="color:#4070a0;font-weight:bold">\
+</span><span style="color:#4070a0;font-weight:bold"></span>  pygments<span style="">
+</span><span style=""></span><span style="color:#007020;font-weight:bold">RUN</span> mkdir /xonsh<span style="">
+</span><span style=""></span><span style="color:#007020;font-weight:bold">VOLUME</span><span style="color:#4070a0"> /xonsh</span><span style="">
+</span><span style=""></span><span style="color:#007020;font-weight:bold">WORKDIR</span><span style="color:#4070a0"> /xonsh</span><span style="">
+</span><span style=""></span><span style="color:#007020;font-weight:bold">CMD</span><span style="color:#4070a0"> /xonsh/entry.sh</span><span style="">
+</span><span style=""></span><span style="color:#60a0b0;font-style:italic"># build: docker build -f dev.Dockerfile -t xonsh-vrs-dev .</span></code></pre></div>
+<p>次に、自動テスト用に以下のファイルを作成する</p>
+<div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#007020">#!/usr/bin/env bash
+</span><span style="color:#007020"></span>
+<span style="color:#60a0b0;font-style:italic"># /path/to/xonsh/entry.sh
+</span><span style="color:#60a0b0;font-style:italic"></span>
+<span style="color:#007020;font-weight:bold">if</span> ! python setup.py install; <span style="color:#007020;font-weight:bold">then</span>
+  <span style="color:#007020">exit</span> <span style="color:#40a070">125</span>
+<span style="color:#007020;font-weight:bold">fi</span>
+<span style="color:#bb60d5">captured</span><span style="color:#666">=</span><span style="color:#007020;font-weight:bold">$(</span>xonsh <span style="color:#40a070">2</span>&gt;&amp;<span style="color:#40a070">1</span> <span style="color:#4070a0">&lt;&lt;XSH
+</span><span style="color:#4070a0">import imp
+</span><span style="color:#4070a0">XSH</span>
+<span style="color:#007020;font-weight:bold">)</span>
+<span style="color:#666">[[</span> -z <span style="color:#4070a0">&#34;</span><span style="color:#bb60d5">$captured</span><span style="color:#4070a0">&#34;</span> <span style="color:#666">]]</span>;</code></pre></div><div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#007020">#!/usr/bin/env bash
+</span><span style="color:#007020"></span>
+<span style="color:#60a0b0;font-style:italic"># /path/to/xonsh/bisect.sh
+</span><span style="color:#60a0b0;font-style:italic"># git bisect run用
+</span><span style="color:#60a0b0;font-style:italic"></span>docker run --rm -v <span style="color:#4070a0">&#34;</span><span style="color:#007020;font-weight:bold">$(</span><span style="color:#007020">pwd</span><span style="color:#007020;font-weight:bold">)</span><span style="color:#4070a0">&#34;</span>:/xonsh xonsh-vrs-dev</code></pre></div>
+<h2 id="実行">実行</h2>
+
+<p><code>git bisect start 0.8.1 0.7.10; git bisect run ./bisect.sh</code> でコミットを特定する</p>
+
+<h2 id="結果">結果</h2>
+
+<p><a href="https://github.com/xonsh/xonsh/commit/a40348d4833ece3fab696137512b14010b5626c7">明示的に有効化されていた。</a></p>
+
+  </div>
+  <div id="disqus_thread"></div>
+</div>
+
+
+<script type="text/javascript">
+var disqus_shortname = "virusbb001githubio";
+(function () {
+    var s = document.createElement('script'); s.async = true;
+    s.type = 'text/javascript';
+    s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+    (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+}());
+</script>
+
+
+
+<script type="text/javascript">
+    var disqus_shortname = "virusbb001githubio";
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+</body>
+</html>
+

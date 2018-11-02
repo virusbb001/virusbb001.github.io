@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>Vimエラーメモ &middot; virusbb001</title>
+
+  
+  <link rel="stylesheet" href="https://virusbb001.github.io/css/poole.css">
+  <link rel="stylesheet" href="https://virusbb001.github.io/css/hyde.css">
+  <link rel="stylesheet" href="https://virusbb001.github.io/css/poole-overrides.css">
+  <link rel="stylesheet" href="https://virusbb001.github.io/css/hyde-overrides.css">
+  <link rel="stylesheet" href="https://virusbb001.github.io/css/hyde-x.css">
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  
+
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://virusbb001.github.io/touch-icon-144-precomposed.png">
+  <link href="https://virusbb001.github.io/favicon.png" rel="icon">
+
+  
+  
+  
+  
+
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-58571979-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+  
+</head>
+<body>
+<div class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      
+      <h1>virusbb001</h1>
+      
+    </div>
+
+    <ul class="sidebar-nav">
+      <li class="sidebar-nav-item"><a href="https://virusbb001.github.io/">Blog</a></li>
+      
+    </ul>
+
+    <ul class="sidebar-nav">
+      <li class="sidebar-nav-item">
+      <a href="https://github.com/virusbb001/"><i class="fa fa-github-square fa-3x"></i></a>
+      
+      
+      
+      
+      
+      <a href="https://twitter.com/virusVer001"><i class="fa fa-twitter-square fa-3x"></i></a>
+      
+      
+      </li>
+    </ul>
+
+    
+
+    <p>Copyright &copy; 2018 <a href="https://virusbb001.github.io/license/">License</a><br/>
+       Powered by <a href="http://gohugo.io">Hugo</a> and <a href="https://github.com/zyro/hyde-x">Hyde-X</a></p>
+
+  </div>
+</div>
+
+
+<div class="content container">
+  <div class="post">
+    <h1 class="post-title">Vimエラーメモ</h1>
+    <span class="post-date">Jun 27, 2018 &middot; 2 minute read &middot; <a href="https://virusbb001.github.io/blog/2018/06/27/vim-error-memo/#disqus_thread">Comments</a>
+    </span>
+    <p>Vimでエラーが起きたときとか何かおかしいときに見て置けるようにしたい逆引きメモ</p>
+
+<h2 id="前提条件">前提条件</h2>
+
+<ul>
+<li>neovim v0.3.0</li>
+<li>dein.vim</li>
+</ul>
+
+<p></p>
+
+<h2 id="autocmd実行時にエラーが出る-e117">autocmd実行時にエラーが出る(E117)</h2>
+
+<p>例: <a href="https://github.com/mhartington/nvim-typescript">nvim-typescript</a>使用時に<a href="https://vim-jp.org/vimdoc-ja/eval.html#E117">E117 未知の関数</a>が発生した</p>
+
+<p><code>:verbose autocmd EventName pattern</code> でどのような関数が実行されるか確認する<br />
+問題になっていそうなプラグインを特定する</p>
+
+<pre><code>--- Auto-Commands ---
+nvim-typescript  BufEnter
+    *.tsx     call nvim_typescript#DefaultKeyMap()
+    最後にセットしたスクリプト: ~/.vim/dein/repos/github.com/mhartington/nvim-typescript/plugin/nvim_typescript.vim
+    *.tsx     call TSOnBufEnter()
+    最後にセットしたスクリプト: ~/.vim/dein/repos/github.com/mhartington/nvim-typescript/plugin/nvim_typescript.vim
+</code></pre>
+
+<p>なくなっているのは <code>TSOnBufEnter</code> なので <code>~/.vim/dein/repos/github.com/mhartington/nvim-typescript/plugin/nvim_typescript.vim</code> に移動して <code>git grep TSOnBufEnter&quot;</code></p>
+
+<p><code>rplugin/*</code> のファイルに引っかかったらremote pluginの読み込みに失敗していると推測できるので <code>:CheckHealth</code> を実行して問題ないか確認する<br />
+その後、 <code>call dein#remote_plugins()</code></p>
+
+<p>npmの <code>neovim</code> が入っていなかったので、 <code>npm install -g neovim</code></p>
+
+<p>ここまでやってだめだったので、 <code>README.md</code> を確認<br />
+<code>build</code>の指定が正しくなかったため修正/手動実行 + <code>:call dein#recache_runtimepath()</code></p>
+
+<p>動作確認して成功</p>
+
+<h2 id="slimv-のキーマップが聞かなかった"><code>slimv</code> のキーマップが聞かなかった</h2>
+
+<p>TL;DR: dein.vimのftplugin読み込みに関するバグだったらしい。</p>
+
+<p>Twitterにぶん投げたのでそれを使用<br />
+基本的に<code>:scriptnames</code> の出力を見ていってそこのソースを読む感じになる</p>
+
+<blockquote class="twitter-tweet" data-lang="ja"><p lang="ja" dir="ltr">dein.vim+slimvがうまくいかない・・・<br>`:scriptnames`と`echo &amp;runtimepath`見たところデフォルトランタイムの`ftplugin/lisp.vim`で`b:did_ftplugin=1`されていて`slimv` の<br>`ftplugin/lisp/slimv-lisp.vim` でfinishされていそう</p>&mdash; virus.exe (@virusVer001) <a href="https://twitter.com/virusVer001/status/1009441696013119488?ref_src=twsrc%5Etfw">2018年6月20日</a></blockquote>
+
+<blockquote class="twitter-tweet" data-lang="ja"><p lang="ja" dir="ltr">dein.vimの`autoload/dein/install.vim` の dein#install#_get_default\_plugin()の中で定義している`s:ftplugin()` が先に `runtime! ftplugin/${ft}.vim`を読み込もうとしたせいでこうなっていそう 順番変えればslimvを読み込んでくれそう</p>&mdash; virus.exe (@virusVer001) <a href="https://twitter.com/virusVer001/status/1009472474541486080?ref_src=twsrc%5Etfw">2018年6月20日</a></blockquote>
+
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<h2 id="filetypeの設定がよくわからない">filetypeの設定がよくわからない</h2>
+
+<p><code>*.tsx</code> のファイル設定がtypescriptreactになっていた</p>
+<div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#bb60d5">dein_dir</span><span style="color:#666">=</span><span style="color:#4070a0">&#34;</span><span style="color:#70a0d0;font-style:italic">${</span><span style="color:#bb60d5">HOME</span><span style="color:#70a0d0;font-style:italic">}</span><span style="color:#4070a0">/.vim/dein/repos/github.com&#34;</span>
+
+<span style="color:#007020;font-weight:bold">for</span> repo in <span style="color:#4070a0">`</span>find <span style="color:#70a0d0;font-style:italic">${</span><span style="color:#bb60d5">dein_dir</span><span style="color:#70a0d0;font-style:italic">}</span> -mindepth <span style="color:#40a070">2</span> -maxdepth <span style="color:#40a070">2</span> -type d<span style="color:#4070a0">`</span>; <span style="color:#007020;font-weight:bold">do</span>
+  git -C <span style="color:#4070a0">&#34;</span><span style="color:#bb60d5">$repo</span><span style="color:#4070a0">&#34;</span> grep <span style="color:#4070a0">&#34;b:did_ftplugin&#34;</span>
+<span style="color:#007020;font-weight:bold">done</span></code></pre></div>
+  </div>
+  <div id="disqus_thread"></div>
+</div>
+
+
+<script type="text/javascript">
+var disqus_shortname = "virusbb001githubio";
+(function () {
+    var s = document.createElement('script'); s.async = true;
+    s.type = 'text/javascript';
+    s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+    (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+}());
+</script>
+
+
+
+<script type="text/javascript">
+    var disqus_shortname = "virusbb001githubio";
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+</body>
+</html>
+

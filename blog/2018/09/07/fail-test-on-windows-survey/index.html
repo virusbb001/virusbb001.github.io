@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
 
-  <title>Categories &middot; virusbb001</title>
+  <title>Windows 10 でXonshのテスト走らせたら失敗したところの調査 &middot; virusbb001</title>
 
   
   <link rel="stylesheet" href="https://virusbb001.github.io/css/poole.css">
@@ -27,7 +27,7 @@
   
   
   
-  <link href="https://virusbb001.github.io/categories/index.xml" rel="alternate" type="application/rss+xml" title="virusbb001&#39;s blog &middot; virusbb001" />
+  
 
   <meta name="description" content="">
   <meta name="keywords" content="">
@@ -81,50 +81,53 @@
 
 
 <div class="content container">
-  <ul class="posts">
-  
-    <li><a href="https://virusbb001.github.io/categories/computercraft/">Computercraft</a>
+  <div class="post">
+    <h1 class="post-title">Windows 10 でXonshのテスト走らせたら失敗したところの調査</h1>
+    <span class="post-date">Sep 7, 2018 &middot; 1 minute read &middot; <a href="https://virusbb001.github.io/blog/2018/09/07/fail-test-on-windows-survey/#disqus_thread">Comments</a>
     </span>
-    &middot; <time>Sep 17, 2018</time></li>
-  
-    <li><a href="https://virusbb001.github.io/categories/game/">Game</a>
-    </span>
-    &middot; <time>Feb 10, 2015</time></li>
-  
-    <li><a href="https://virusbb001.github.io/categories/gentoo/">Gentoo</a>
-    </span>
-    &middot; <time>Jul 26, 2017</time></li>
-  
-    <li><a href="https://virusbb001.github.io/categories/git/">Git</a>
-    </span>
-    &middot; <time>Nov 2, 2018</time></li>
-  
-    <li><a href="https://virusbb001.github.io/categories/jobhunting/">Jobhunting</a>
-    </span>
-    &middot; <time>Apr 30, 2015</time></li>
-  
-    <li><a href="https://virusbb001.github.io/categories/linux/">Linux</a>
-    </span>
-    &middot; <time>Jul 26, 2017</time></li>
-  
-    <li><a href="https://virusbb001.github.io/categories/lua/">Lua</a>
-    </span>
-    &middot; <time>Sep 17, 2018</time></li>
-  
-    <li><a href="https://virusbb001.github.io/categories/minecraft/">Minecraft</a>
-    </span>
-    &middot; <time>Sep 17, 2018</time></li>
-  
-    <li><a href="https://virusbb001.github.io/categories/programming/">Programming</a>
-    </span>
-    &middot; <time>Feb 10, 2015</time></li>
-  
-    <li><a href="https://virusbb001.github.io/categories/windows/">Windows</a>
-    </span>
-    &middot; <time>May 7, 2017</time></li>
-  
-  </ul>
+    <p>普段遣いしている Windows 10, Python 3.7 でテストを走らせたら失敗したところの調査記録</p>
+
+<p>Abstract Here.</p>
+
+<p></p>
+
+<h2 id="xonsh上でxonshのテストを走らせると失敗する">Xonsh上でXonshのテストを走らせると失敗する？</h2>
+
+<h2 id="test-uncpushd-cd-unc-auto-pushd">test_uncpushd_cd_unc_auto_pushd</h2>
+
+<pre><code>&gt;       key = winreg.OpenKey(winreg.HKEY_CURRENT_USER, r'software\microsoft\command processor', access=winreg.KEY_WRITE)
+E       FileNotFoundError: [WinError 2] 指定されたファイルが見つかりません。
+
+tests\test_dirstack_unc.py:213: FileNotFoundError
+</code></pre>
+  </div>
+  <div id="disqus_thread"></div>
 </div>
+
+
+<script type="text/javascript">
+var disqus_shortname = "virusbb001githubio";
+(function () {
+    var s = document.createElement('script'); s.async = true;
+    s.type = 'text/javascript';
+    s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+    (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+}());
+</script>
+
+
+
+<script type="text/javascript">
+    var disqus_shortname = "virusbb001githubio";
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
 
 </body>
 </html>

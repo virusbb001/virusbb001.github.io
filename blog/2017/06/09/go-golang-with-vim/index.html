@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
 
-  <title>Vimで始めるGo &middot; virusbb001</title>
+  <title>VimでGo言語を触ってみた &middot; virusbb001</title>
 
   
   <link rel="stylesheet" href="https://virusbb001.github.io/css/poole.css">
@@ -73,16 +73,17 @@
 
     
 
-    <p>Copyright &copy; 2017 <a href="https://virusbb001.github.io/license/">License</a><br/>
+    <p>Copyright &copy; 2018 <a href="https://virusbb001.github.io/license/">License</a><br/>
        Powered by <a href="http://gohugo.io">Hugo</a> and <a href="https://github.com/zyro/hyde-x">Hyde-X</a></p>
+
   </div>
 </div>
 
 
 <div class="content container">
   <div class="post">
-    <h1 class="post-title">Vimで始めるGo</h1>
-    <span class="post-date">Jun 9, 2017 &middot; 2 minute read &middot; <a href="https://virusbb001.github.io/blog/2017/06/09/go-golang-with-vim/#disqus_thread">Comments</a>
+    <h1 class="post-title">VimでGo言語を触ってみた</h1>
+    <span class="post-date">Jun 9, 2017 &middot; 3 minute read &middot; <a href="https://virusbb001.github.io/blog/2017/06/09/go-golang-with-vim/#disqus_thread">Comments</a>
     
     <br/>
     <a class="label" href="https://virusbb001.github.io/categories/programming">programming</a><a class="label" href="https://virusbb001.github.io/categories/Golang">Golang</a><a class="label" href="https://virusbb001.github.io/categories/Vim">Vim</a>
@@ -112,7 +113,7 @@
 <p>ある程度進めていくと(あるいは進めなくても)、<a href="http://www.vim.org">Vim</a>が使いたくなってくると思います。
 いい機会なのでGo言語開発環境とGo言語用のプラグインを入れます。</p>
 
-<h2 id="vimでgoを書く">VimでGoを書く</h2>
+<h2 id="goをローカルに入れる">Goをローカルに入れる</h2>
 
 <p>まずArch LinuxにGoを入れます。<a href="https://wiki.archlinuxjp.org/index.php/Go">Arch LinuxのWikiの日本語のGoのページ</a>があるのでそれに従います。いい時代になりましたね。
 今回は<code>pacman -S go</code>を行いました。</p>
@@ -122,20 +123,62 @@
 <p><code>go</code>が正常に動作するかも兼ねて、実際にGo言語の動作確認を行います。</p>
 
 <p>適当なディレクトリに以下のHello Worldプログラムを書きます。なお執筆時点でのVimには標準でGo言語のシンタックスファイルが有るようです。</p>
-<div class="highlight" style="background: #f0f0f0"><pre style="line-height: 125%"><span></span><span style="color: #007020; font-weight: bold">package</span> main
+<div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#007020;font-weight:bold">package</span> main
 
-<span style="color: #007020; font-weight: bold">import</span> <span style="color: #4070a0">&quot;fmt&quot;</span>
+<span style="color:#007020;font-weight:bold">import</span> <span style="color:#4070a0">&#34;fmt&#34;</span>
 
-<span style="color: #007020; font-weight: bold">func</span> main() {
-	fmt.Println(<span style="color: #4070a0">&quot;Hello, World!&quot;</span>)
-}
-</pre></div>
-
+<span style="color:#007020;font-weight:bold">func</span> main() {
+    fmt.Println(<span style="color:#4070a0">&#34;Hello, World!&#34;</span>)
+}</code></pre></div>
 <p><code>:w hello.go</code>したあと、<code>:!go run</code>をします。
-<code>Hello, World!</code>と出てきたらGoは正常に動作しています。これでGo言語を使って仕事をしているときに&rdquo;この実行結果を見てgo run wwwwwww`と言うことができるようになりました。やりましたね。</p>
+<code>Hello, World!</code>と出てきたらGoは正常に動作しています。これでGo言語を使って仕事をしているときに&rdquo;この実行結果を見てgo run wwwwwww&rdquo;と言うことができるようになりました。やりましたね。</p>
 
 <p>また、コンパイルも正常に動作するかを確認します。
 <code>:q</code>したあと、<code>go build hello.go</code> を行いビルドします。実行ファイル(執筆時点では<code>hello</code>)ができていることを確認し、実行して<code>go run</code>した時と同じ結果が出るかを確認します。</p>
+
+<h2 id="vimでgoを書く">VimでGoを書く</h2>
+
+<p>Go言語は<a href="https://github.com/golang/go/wiki/IDEsAndTextEditorPlugins">GithubのWikiにIDEやエディタのプラグインをまとめたページ</a>があります。
+<a href="https://github.com/fatih/vim-go">fatih/vim-go</a>プラグインを入れます。
+私は<a href="https://github.com/Shougo/dein.vim">Shougo/dein.vim</a>を使用し、tomlで管理しているので以下の設定を追記しました。</p>
+
+<pre><code>[[plugins]]
+repo = 'fatih/vim-go'
+on_ft = 'go'
+lazy = 1
+</code></pre>
+
+<p>インストール後、fatih/vim-goのREADMEのInstallの項目に従い、<code>:GoInstallBinaries</code>を行います。
+あとはvim-goがやってくれますが、時間がかかるので待ちます。</p>
+
+<h2 id="vim-goに慣れる">vim-goに慣れる</h2>
+
+<p>vim-goは実際機能が豊富ですが、vim-goには<a href="https://github.com/fatih/vim-go-tutorial#documentation-lookup">fatih/vim-go-tutorial</a>というオフィシャルチュートリアルがあるので、それをやると一通りの機能に触れることができます。</p>
+
+<h2 id="go言語に慣れる">Go言語に慣れる</h2>
+
+<p>実際のGo言語の勉強に見たページです。</p>
+
+<ul>
+<li><a href="https://go-tour-jp.appspot.com/welcome/1">A Tour of Go(日本語)</a>
+
+<ul>
+<li><a href="https://tour.golang.org/welcome/1">原文</a></li>
+</ul></li>
+<li><a href="http://go.shibu.jp/effective_go.html">Effective Go(日本語)</a>
+
+<ul>
+<li><a href="https://golang.org/doc/effective_go.html">原文</a></li>
+</ul></li>
+<li>実際のGoライブラルのソース
+
+<ul>
+<li><code>go env GOROOT</code>のsrcにライブラリ等のソースが入っています。</li>
+</ul></li>
+<li><a href="http://gihyo.jp/dev/feature/01/go_4beginners">はじめてのGo―シンプルな言語仕様，型システム，並行処理</a></li>
+</ul>
+
+<p>TODO: もう少し調べて追記する</p>
   </div>
   <div id="disqus_thread"></div>
 </div>
