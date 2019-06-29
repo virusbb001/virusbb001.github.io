@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Game on virusbb001&#39;s blog</title>
+    <title>game on virusbb001&#39;s blog</title>
     <link>https://virusbb001.github.io/categories/game/</link>
-    <description>Recent content in Game on virusbb001&#39;s blog</description>
+    <description>Recent content in game on virusbb001&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <lastBuildDate>Tue, 10 Feb 2015 17:46:25 +0000</lastBuildDate>
@@ -18,9 +18,7 @@
       
       <guid>https://virusbb001.github.io/blog/2015/02/10/programming-and-game/</guid>
       <description>&lt;p&gt;ゲームしながらプログラミング出来そうなもの個人的なまとめ&lt;br /&gt;
-他に面白そうなのあったら教えて&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+他に面白そうなのあったら教えて&lt;/p&gt;</description>
     </item>
     
   </channel>

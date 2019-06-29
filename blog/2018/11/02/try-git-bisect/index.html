@@ -73,7 +73,7 @@
 
     
 
-    <p>Copyright &copy; 2018 <a href="https://virusbb001.github.io/license/">License</a><br/>
+    <p>Copyright &copy; 2019 <a href="https://virusbb001.github.io/license/">License</a><br/>
        Powered by <a href="http://gohugo.io">Hugo</a> and <a href="https://github.com/zyro/hyde-x">Hyde-X</a></p>
 
   </div>
@@ -118,8 +118,8 @@
 <p>次に、自動テスト用に以下のファイルを作成する</p>
 <div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#007020">#!/usr/bin/env bash
 </span><span style="color:#007020"></span>
-<span style="color:#60a0b0;font-style:italic"># /path/to/xonsh/entry.sh
-</span><span style="color:#60a0b0;font-style:italic"></span>
+<span style="color:#60a0b0;font-style:italic"># /path/to/xonsh/entry.sh</span>
+
 <span style="color:#007020;font-weight:bold">if</span> ! python setup.py install; <span style="color:#007020;font-weight:bold">then</span>
   <span style="color:#007020">exit</span> <span style="color:#40a070">125</span>
 <span style="color:#007020;font-weight:bold">fi</span>
@@ -129,9 +129,9 @@
 <span style="color:#007020;font-weight:bold">)</span>
 <span style="color:#666">[[</span> -z <span style="color:#4070a0">&#34;</span><span style="color:#bb60d5">$captured</span><span style="color:#4070a0">&#34;</span> <span style="color:#666">]]</span>;</code></pre></div><div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#007020">#!/usr/bin/env bash
 </span><span style="color:#007020"></span>
-<span style="color:#60a0b0;font-style:italic"># /path/to/xonsh/bisect.sh
-</span><span style="color:#60a0b0;font-style:italic"># git bisect run用
-</span><span style="color:#60a0b0;font-style:italic"></span>docker run --rm -v <span style="color:#4070a0">&#34;</span><span style="color:#007020;font-weight:bold">$(</span><span style="color:#007020">pwd</span><span style="color:#007020;font-weight:bold">)</span><span style="color:#4070a0">&#34;</span>:/xonsh xonsh-vrs-dev</code></pre></div>
+<span style="color:#60a0b0;font-style:italic"># /path/to/xonsh/bisect.sh</span>
+<span style="color:#60a0b0;font-style:italic"># git bisect run用</span>
+docker run --rm -v <span style="color:#4070a0">&#34;</span><span style="color:#007020;font-weight:bold">$(</span><span style="color:#007020">pwd</span><span style="color:#007020;font-weight:bold">)</span><span style="color:#4070a0">&#34;</span>:/xonsh xonsh-vrs-dev</code></pre></div>
 <h2 id="実行">実行</h2>
 
 <p><code>git bisect start 0.8.1 0.7.10; git bisect run ./bisect.sh</code> でコミットを特定する</p>

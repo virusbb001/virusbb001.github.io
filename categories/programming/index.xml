@@ -1,15 +1,32 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Programming on virusbb001&#39;s blog</title>
+    <title>programming on virusbb001&#39;s blog</title>
     <link>https://virusbb001.github.io/categories/programming/</link>
-    <description>Recent content in Programming on virusbb001&#39;s blog</description>
+    <description>Recent content in programming on virusbb001&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Tue, 10 Feb 2015 17:46:25 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 23 Jun 2019 21:36:03 +0900</lastBuildDate>
     
 	<atom:link href="https://virusbb001.github.io/categories/programming/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>QtのC&#43;&#43;チュートリアルをGo言語で実装した話</title>
+      <link>https://virusbb001.github.io/blog/2019/06/23/golang-qt-tutor/</link>
+      <pubDate>Sun, 23 Jun 2019 21:36:03 +0900</pubDate>
+      
+      <guid>https://virusbb001.github.io/blog/2019/06/23/golang-qt-tutor/</guid>
+      <description>&lt;p&gt;QtのC++チュートリアルをGo言語に読み替えた時のメモです。&lt;/p&gt;
+
+&lt;h2 id=&#34;参考サイト&#34;&gt;参考サイト&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://densan-labs.net/tech/qt/index.html&#34;&gt;densanlabs Qtプログラミング入門&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/therecipe/qt&#34;&gt;therecipe/qt&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/therecipe/examples&#34;&gt;therecipe/examples&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
     
     <item>
       <title>ゲームしながらプログラミングできそうなの</title>
@@ -18,9 +35,7 @@
       
       <guid>https://virusbb001.github.io/blog/2015/02/10/programming-and-game/</guid>
       <description>&lt;p&gt;ゲームしながらプログラミング出来そうなもの個人的なまとめ&lt;br /&gt;
-他に面白そうなのあったら教えて&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+他に面白そうなのあったら教えて&lt;/p&gt;</description>
     </item>
     
   </channel>

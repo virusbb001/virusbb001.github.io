@@ -6,39 +6,40 @@
     <description>Recent content in Categories on virusbb001&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
+    <lastBuildDate>Sun, 23 Jun 2019 21:36:03 +0900</lastBuildDate>
     
 	<atom:link href="https://virusbb001.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Computercraft</title>
-      <link>https://virusbb001.github.io/categories/computercraft/</link>
-      <pubDate>Mon, 17 Sep 2018 01:38:20 +0900</pubDate>
+      <title>Golang</title>
+      <link>https://virusbb001.github.io/categories/Golang/</link>
+      <pubDate>Sun, 23 Jun 2019 21:36:03 +0900</pubDate>
       
-      <guid>https://virusbb001.github.io/categories/computercraft/</guid>
+      <guid>https://virusbb001.github.io/categories/Golang/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Game</title>
-      <link>https://virusbb001.github.io/categories/game/</link>
-      <pubDate>Tue, 10 Feb 2015 17:46:25 +0000</pubDate>
+      <title>Qt</title>
+      <link>https://virusbb001.github.io/categories/Qt/</link>
+      <pubDate>Sun, 23 Jun 2019 21:36:03 +0900</pubDate>
       
-      <guid>https://virusbb001.github.io/categories/game/</guid>
+      <guid>https://virusbb001.github.io/categories/Qt/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Gentoo</title>
-      <link>https://virusbb001.github.io/categories/gentoo/</link>
-      <pubDate>Wed, 26 Jul 2017 22:42:45 +0900</pubDate>
+      <title>programming</title>
+      <link>https://virusbb001.github.io/categories/programming/</link>
+      <pubDate>Sun, 23 Jun 2019 21:36:03 +0900</pubDate>
       
-      <guid>https://virusbb001.github.io/categories/gentoo/</guid>
+      <guid>https://virusbb001.github.io/categories/programming/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Git</title>
+      <title>git</title>
       <link>https://virusbb001.github.io/categories/git/</link>
       <pubDate>Fri, 02 Nov 2018 23:49:44 +0900</pubDate>
       
@@ -47,25 +48,16 @@
     </item>
     
     <item>
-      <title>Jobhunting</title>
-      <link>https://virusbb001.github.io/categories/jobhunting/</link>
-      <pubDate>Thu, 30 Apr 2015 07:49:13 +0000</pubDate>
+      <title>computercraft</title>
+      <link>https://virusbb001.github.io/categories/computercraft/</link>
+      <pubDate>Mon, 17 Sep 2018 01:38:20 +0900</pubDate>
       
-      <guid>https://virusbb001.github.io/categories/jobhunting/</guid>
+      <guid>https://virusbb001.github.io/categories/computercraft/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Linux</title>
-      <link>https://virusbb001.github.io/categories/linux/</link>
-      <pubDate>Wed, 26 Jul 2017 22:42:45 +0900</pubDate>
-      
-      <guid>https://virusbb001.github.io/categories/linux/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Lua</title>
+      <title>lua</title>
       <link>https://virusbb001.github.io/categories/lua/</link>
       <pubDate>Mon, 17 Sep 2018 01:38:20 +0900</pubDate>
       
@@ -74,7 +66,7 @@
     </item>
     
     <item>
-      <title>Minecraft</title>
+      <title>minecraft</title>
       <link>https://virusbb001.github.io/categories/minecraft/</link>
       <pubDate>Mon, 17 Sep 2018 01:38:20 +0900</pubDate>
       
@@ -83,20 +75,47 @@
     </item>
     
     <item>
-      <title>Programming</title>
-      <link>https://virusbb001.github.io/categories/programming/</link>
-      <pubDate>Tue, 10 Feb 2015 17:46:25 +0000</pubDate>
+      <title>Gentoo</title>
+      <link>https://virusbb001.github.io/categories/Gentoo/</link>
+      <pubDate>Wed, 26 Jul 2017 22:42:45 +0900</pubDate>
       
-      <guid>https://virusbb001.github.io/categories/programming/</guid>
+      <guid>https://virusbb001.github.io/categories/Gentoo/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Windows</title>
+      <title>Linux</title>
+      <link>https://virusbb001.github.io/categories/Linux/</link>
+      <pubDate>Wed, 26 Jul 2017 22:42:45 +0900</pubDate>
+      
+      <guid>https://virusbb001.github.io/categories/Linux/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>windows</title>
       <link>https://virusbb001.github.io/categories/windows/</link>
       <pubDate>Sun, 07 May 2017 17:53:32 +0900</pubDate>
       
       <guid>https://virusbb001.github.io/categories/windows/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>jobhunting</title>
+      <link>https://virusbb001.github.io/categories/jobhunting/</link>
+      <pubDate>Thu, 30 Apr 2015 07:49:13 +0000</pubDate>
+      
+      <guid>https://virusbb001.github.io/categories/jobhunting/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>game</title>
+      <link>https://virusbb001.github.io/categories/game/</link>
+      <pubDate>Tue, 10 Feb 2015 17:46:25 +0000</pubDate>
+      
+      <guid>https://virusbb001.github.io/categories/game/</guid>
       <description></description>
     </item>
     

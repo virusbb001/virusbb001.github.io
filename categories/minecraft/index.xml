@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Minecraft on virusbb001&#39;s blog</title>
+    <title>minecraft on virusbb001&#39;s blog</title>
     <link>https://virusbb001.github.io/categories/minecraft/</link>
-    <description>Recent content in Minecraft on virusbb001&#39;s blog</description>
+    <description>Recent content in minecraft on virusbb001&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <lastBuildDate>Mon, 17 Sep 2018 01:38:20 +0900</lastBuildDate>
@@ -26,9 +26,7 @@
       <pubDate>Sun, 05 Jul 2015 15:57:11 +0000</pubDate>
       
       <guid>https://virusbb001.github.io/blog/2015/07/05/minecraft-1-dot-7-10-mods/</guid>
-      <description>&lt;p&gt;入れてるmodリスト&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;入れてるmodリスト&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -39,9 +37,7 @@
       <guid>https://virusbb001.github.io/blog/2015/01/19/install-forge-before-1-dot-5-2/</guid>
       <description>&lt;p&gt;備忘録&lt;br /&gt;
 だいたいは&lt;a href=&#34;http://ghasts.blog.fc2.com/blog-entry-571.html&#34;&gt;まいんくらふとにっき&lt;/a&gt;を参考に&lt;br /&gt;
-jarファイルでないと実行してくれない模様&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+jarファイルでないと実行してくれない模様&lt;/p&gt;</description>
     </item>
     
   </channel>
